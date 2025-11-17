@@ -32,7 +32,6 @@
             button_addMedicalDocument = new Button();
             button_changePatientInfo = new Button();
             button_back = new Button();
-            label_formName = new Label();
             splitContainer_body = new SplitContainer();
             tableLayoutPanel_Patient_Info = new TableLayoutPanel();
             label_patient_phoneNumber = new Label();
@@ -63,6 +62,7 @@
             examinationResult_result = new DataGridViewTextBoxColumn();
             examinationResult_author = new DataGridViewTextBoxColumn();
             examinationResult_open = new DataGridViewButtonColumn();
+            label_formName = new Label();
             panel_Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer_body).BeginInit();
             splitContainer_body.Panel1.SuspendLayout();
@@ -93,9 +93,9 @@
             button_addMedicalDocument.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             button_addMedicalDocument.Image = Properties.Resources.plus;
             button_addMedicalDocument.ImageAlign = ContentAlignment.MiddleLeft;
-            button_addMedicalDocument.Location = new Point(658, 17);
+            button_addMedicalDocument.Location = new Point(658, 12);
             button_addMedicalDocument.Name = "button_addMedicalDocument";
-            button_addMedicalDocument.Size = new Size(130, 23);
+            button_addMedicalDocument.Size = new Size(130, 30);
             button_addMedicalDocument.TabIndex = 8;
             button_addMedicalDocument.Text = "Добавить запись";
             button_addMedicalDocument.TextImageRelation = TextImageRelation.TextBeforeImage;
@@ -106,9 +106,9 @@
             button_changePatientInfo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             button_changePatientInfo.Image = Properties.Resources.pencil;
             button_changePatientInfo.ImageAlign = ContentAlignment.MiddleLeft;
-            button_changePatientInfo.Location = new Point(562, 17);
+            button_changePatientInfo.Location = new Point(562, 13);
             button_changePatientInfo.Name = "button_changePatientInfo";
-            button_changePatientInfo.Size = new Size(90, 23);
+            button_changePatientInfo.Size = new Size(90, 30);
             button_changePatientInfo.TabIndex = 7;
             button_changePatientInfo.Text = "Изменить";
             button_changePatientInfo.TextImageRelation = TextImageRelation.TextBeforeImage;
@@ -118,25 +118,13 @@
             // 
             button_back.Image = Properties.Resources.back_arrow;
             button_back.ImageAlign = ContentAlignment.MiddleRight;
-            button_back.Location = new Point(12, 17);
+            button_back.Location = new Point(10, 13);
             button_back.Name = "button_back";
-            button_back.Size = new Size(90, 23);
+            button_back.Size = new Size(90, 30);
             button_back.TabIndex = 6;
             button_back.Text = "Назад";
             button_back.TextImageRelation = TextImageRelation.ImageBeforeText;
             button_back.UseVisualStyleBackColor = true;
-            // 
-            // label_formName
-            // 
-            label_formName.Dock = DockStyle.Fill;
-            label_formName.Font = new Font("Segoe UI", 11F);
-            label_formName.Location = new Point(0, 0);
-            label_formName.Name = "label_formName";
-            label_formName.Size = new Size(800, 55);
-            label_formName.TabIndex = 2;
-            label_formName.Text = "Медицинская карта пациента";
-            label_formName.TextAlign = ContentAlignment.MiddleCenter;
-            label_formName.Click += label_Form_Name_Click;
             // 
             // splitContainer_body
             // 
@@ -392,7 +380,7 @@
             tabPage_Patient_ExaminationResult.Location = new Point(4, 24);
             tabPage_Patient_ExaminationResult.Name = "tabPage_Patient_ExaminationResult";
             tabPage_Patient_ExaminationResult.Padding = new Padding(3);
-            tabPage_Patient_ExaminationResult.Size = new Size(558, 367);
+            tabPage_Patient_ExaminationResult.Size = new Size(572, 367);
             tabPage_Patient_ExaminationResult.TabIndex = 1;
             tabPage_Patient_ExaminationResult.Text = "Результаты анализов";
             tabPage_Patient_ExaminationResult.UseVisualStyleBackColor = true;
@@ -405,7 +393,7 @@
             dataGridView_patient_examinationResults.Dock = DockStyle.Fill;
             dataGridView_patient_examinationResults.Location = new Point(3, 3);
             dataGridView_patient_examinationResults.Name = "dataGridView_patient_examinationResults";
-            dataGridView_patient_examinationResults.Size = new Size(552, 361);
+            dataGridView_patient_examinationResults.Size = new Size(566, 361);
             dataGridView_patient_examinationResults.TabIndex = 0;
             // 
             // examinationResult_date
@@ -441,6 +429,18 @@
             examinationResult_open.SortMode = DataGridViewColumnSortMode.Automatic;
             examinationResult_open.Text = "[ Посмотреть ]";
             // 
+            // label_formName
+            // 
+            label_formName.Dock = DockStyle.Fill;
+            label_formName.Font = new Font("Segoe UI", 11F);
+            label_formName.Location = new Point(0, 0);
+            label_formName.Name = "label_formName";
+            label_formName.Size = new Size(800, 55);
+            label_formName.TabIndex = 2;
+            label_formName.Text = "Медицинская карта пациента";
+            label_formName.TextAlign = ContentAlignment.MiddleCenter;
+            label_formName.Click += label_Form_Name_Click;
+            // 
             // PatientCard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -449,7 +449,7 @@
             Controls.Add(splitContainer_body);
             Controls.Add(panel_Header);
             Name = "PatientCard";
-            Text = "PatientCardForm";
+            Text = "Просмотр карты пациента";
             panel_Header.ResumeLayout(false);
             splitContainer_body.Panel1.ResumeLayout(false);
             splitContainer_body.Panel1.PerformLayout();
@@ -472,7 +472,6 @@
         private Button button_addMedicalDocument;
         private Button button_changePatientInfo;
         private Button button_back;
-        private Label label_formName;
         private SplitContainer splitContainer_body;
         private TableLayoutPanel tableLayoutPanel_Patient_Info;
         private Label label_patient_phoneNumber;
@@ -503,5 +502,6 @@
         private DataGridViewTextBoxColumn examinationResult_result;
         private DataGridViewTextBoxColumn examinationResult_author;
         private DataGridViewButtonColumn examinationResult_open;
+        private Label label_formName;
     }
 }
