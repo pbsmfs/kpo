@@ -28,111 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel_Buttons = new Panel();
-            button_back = new Button();
-            button_Save = new Button();
-            button_Cancel = new Button();
-            panel_Header = new Panel();
-            label_formName = new Label();
-            tableLayoutPanel_Patient_Info = new TableLayoutPanel();
+            panel_medicalRecords_buttons = new Panel();
+            button_medicalRecord_back = new Button();
+            panel_medicalRecords_header = new Panel();
+            label_medicalRecord_formName = new Label();
+            tableLayoutPanel_medicalRecords_body = new TableLayoutPanel();
             textBox_medicalRecord_treatment = new TextBox();
             textBox_medicalRecord_symtpoms = new TextBox();
-            label_medicalRecord_symtpoms = new Label();
-            label_medicalRecord_disagnosis = new Label();
+            label_medialRecord_symtpoms = new Label();
+            label_medialRecord_disagnosis = new Label();
             textBox_medicalRecord_diagnosis = new TextBox();
             label_medicalRecord_treatment = new Label();
-            panel_Buttons.SuspendLayout();
-            panel_Header.SuspendLayout();
-            tableLayoutPanel_Patient_Info.SuspendLayout();
+            panel_medicalRecords_buttons.SuspendLayout();
+            panel_medicalRecords_header.SuspendLayout();
+            tableLayoutPanel_medicalRecords_body.SuspendLayout();
             SuspendLayout();
             // 
-            // panel_Buttons
+            // panel_medicalRecords_buttons
             // 
-            panel_Buttons.Controls.Add(button_back);
-            panel_Buttons.Controls.Add(button_Save);
-            panel_Buttons.Controls.Add(button_Cancel);
-            panel_Buttons.Dock = DockStyle.Bottom;
-            panel_Buttons.Location = new Point(0, 510);
-            panel_Buttons.Name = "panel_Buttons";
-            panel_Buttons.Size = new Size(453, 50);
-            panel_Buttons.TabIndex = 6;
+            panel_medicalRecords_buttons.Controls.Add(button_medicalRecord_back);
+            panel_medicalRecords_buttons.Dock = DockStyle.Bottom;
+            panel_medicalRecords_buttons.Location = new Point(0, 510);
+            panel_medicalRecords_buttons.Name = "panel_medicalRecords_buttons";
+            panel_medicalRecords_buttons.Size = new Size(453, 50);
+            panel_medicalRecords_buttons.TabIndex = 6;
             // 
-            // button_back
+            // button_medicalRecord_back
             // 
-            button_back.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button_back.Image = Properties.Resources.back_arrow;
-            button_back.ImageAlign = ContentAlignment.MiddleRight;
-            button_back.Location = new Point(363, 8);
-            button_back.Name = "button_back";
-            button_back.Size = new Size(80, 30);
-            button_back.TabIndex = 2;
-            button_back.Text = "Назад";
-            button_back.TextAlign = ContentAlignment.MiddleLeft;
-            button_back.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button_back.UseVisualStyleBackColor = true;
+            button_medicalRecord_back.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button_medicalRecord_back.Image = Properties.Resources.back_arrow;
+            button_medicalRecord_back.ImageAlign = ContentAlignment.MiddleRight;
+            button_medicalRecord_back.Location = new Point(363, 8);
+            button_medicalRecord_back.Name = "button_medicalRecord_back";
+            button_medicalRecord_back.Size = new Size(80, 30);
+            button_medicalRecord_back.TabIndex = 2;
+            button_medicalRecord_back.Text = "Назад";
+            button_medicalRecord_back.TextAlign = ContentAlignment.MiddleLeft;
+            button_medicalRecord_back.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button_medicalRecord_back.UseVisualStyleBackColor = true;
             // 
-            // button_Save
+            // panel_medicalRecords_header
             // 
-            button_Save.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button_Save.Location = new Point(611, 10);
-            button_Save.Name = "button_Save";
-            button_Save.Size = new Size(80, 30);
-            button_Save.TabIndex = 1;
-            button_Save.Text = "Сохранить";
-            button_Save.UseVisualStyleBackColor = true;
+            panel_medicalRecords_header.Controls.Add(label_medicalRecord_formName);
+            panel_medicalRecords_header.Dock = DockStyle.Top;
+            panel_medicalRecords_header.Location = new Point(0, 0);
+            panel_medicalRecords_header.Name = "panel_medicalRecords_header";
+            panel_medicalRecords_header.Size = new Size(453, 55);
+            panel_medicalRecords_header.TabIndex = 5;
             // 
-            // button_Cancel
+            // label_medicalRecord_formName
             // 
-            button_Cancel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button_Cancel.Location = new Point(525, 10);
-            button_Cancel.Name = "button_Cancel";
-            button_Cancel.Size = new Size(80, 30);
-            button_Cancel.TabIndex = 0;
-            button_Cancel.Text = "Отмена";
-            button_Cancel.UseVisualStyleBackColor = true;
+            label_medicalRecord_formName.Dock = DockStyle.Fill;
+            label_medicalRecord_formName.Font = new Font("Segoe UI", 11F);
+            label_medicalRecord_formName.Location = new Point(0, 0);
+            label_medicalRecord_formName.Name = "label_medicalRecord_formName";
+            label_medicalRecord_formName.Size = new Size(453, 55);
+            label_medicalRecord_formName.TabIndex = 3;
+            label_medicalRecord_formName.Text = "Просмотр записи приема:";
+            label_medicalRecord_formName.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // panel_Header
+            // tableLayoutPanel_medicalRecords_body
             // 
-            panel_Header.Controls.Add(label_formName);
-            panel_Header.Dock = DockStyle.Top;
-            panel_Header.Location = new Point(0, 0);
-            panel_Header.Name = "panel_Header";
-            panel_Header.Size = new Size(453, 55);
-            panel_Header.TabIndex = 5;
-            // 
-            // label_formName
-            // 
-            label_formName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label_formName.Font = new Font("Segoe UI", 11F);
-            label_formName.Location = new Point(0, 0);
-            label_formName.Name = "label_formName";
-            label_formName.Size = new Size(453, 55);
-            label_formName.TabIndex = 3;
-            label_formName.Text = "Просмотр записи приема:";
-            label_formName.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel_Patient_Info
-            // 
-            tableLayoutPanel_Patient_Info.AutoSize = true;
-            tableLayoutPanel_Patient_Info.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel_Patient_Info.ColumnCount = 2;
-            tableLayoutPanel_Patient_Info.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 21.6335545F));
-            tableLayoutPanel_Patient_Info.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 78.36645F));
-            tableLayoutPanel_Patient_Info.Controls.Add(textBox_medicalRecord_treatment, 1, 2);
-            tableLayoutPanel_Patient_Info.Controls.Add(textBox_medicalRecord_symtpoms, 1, 1);
-            tableLayoutPanel_Patient_Info.Controls.Add(label_medicalRecord_symtpoms, 0, 1);
-            tableLayoutPanel_Patient_Info.Controls.Add(label_medicalRecord_disagnosis, 0, 0);
-            tableLayoutPanel_Patient_Info.Controls.Add(textBox_medicalRecord_diagnosis, 1, 0);
-            tableLayoutPanel_Patient_Info.Controls.Add(label_medicalRecord_treatment, 0, 2);
-            tableLayoutPanel_Patient_Info.Dock = DockStyle.Fill;
-            tableLayoutPanel_Patient_Info.Location = new Point(0, 55);
-            tableLayoutPanel_Patient_Info.Name = "tableLayoutPanel_Patient_Info";
-            tableLayoutPanel_Patient_Info.RowCount = 3;
-            tableLayoutPanel_Patient_Info.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
-            tableLayoutPanel_Patient_Info.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
-            tableLayoutPanel_Patient_Info.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
-            tableLayoutPanel_Patient_Info.Size = new Size(453, 455);
-            tableLayoutPanel_Patient_Info.TabIndex = 12;
+            tableLayoutPanel_medicalRecords_body.AutoSize = true;
+            tableLayoutPanel_medicalRecords_body.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel_medicalRecords_body.ColumnCount = 2;
+            tableLayoutPanel_medicalRecords_body.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 21.6335545F));
+            tableLayoutPanel_medicalRecords_body.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 78.36645F));
+            tableLayoutPanel_medicalRecords_body.Controls.Add(textBox_medicalRecord_treatment, 1, 2);
+            tableLayoutPanel_medicalRecords_body.Controls.Add(textBox_medicalRecord_symtpoms, 1, 1);
+            tableLayoutPanel_medicalRecords_body.Controls.Add(label_medialRecord_symtpoms, 0, 1);
+            tableLayoutPanel_medicalRecords_body.Controls.Add(label_medialRecord_disagnosis, 0, 0);
+            tableLayoutPanel_medicalRecords_body.Controls.Add(textBox_medicalRecord_diagnosis, 1, 0);
+            tableLayoutPanel_medicalRecords_body.Controls.Add(label_medicalRecord_treatment, 0, 2);
+            tableLayoutPanel_medicalRecords_body.Dock = DockStyle.Fill;
+            tableLayoutPanel_medicalRecords_body.Location = new Point(0, 55);
+            tableLayoutPanel_medicalRecords_body.Name = "tableLayoutPanel_medicalRecords_body";
+            tableLayoutPanel_medicalRecords_body.RowCount = 3;
+            tableLayoutPanel_medicalRecords_body.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel_medicalRecords_body.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel_medicalRecords_body.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel_medicalRecords_body.Size = new Size(453, 455);
+            tableLayoutPanel_medicalRecords_body.TabIndex = 12;
             // 
             // textBox_medicalRecord_treatment
             // 
@@ -156,27 +132,27 @@
             textBox_medicalRecord_symtpoms.Size = new Size(335, 131);
             textBox_medicalRecord_symtpoms.TabIndex = 4;
             // 
-            // label_medicalRecord_symtpoms
+            // label_medialRecord_symtpoms
             // 
-            label_medicalRecord_symtpoms.Anchor = AnchorStyles.None;
-            label_medicalRecord_symtpoms.AutoSize = true;
-            label_medicalRecord_symtpoms.Font = new Font("Segoe UI", 9F);
-            label_medicalRecord_symtpoms.Location = new Point(13, 219);
-            label_medicalRecord_symtpoms.Name = "label_medicalRecord_symtpoms";
-            label_medicalRecord_symtpoms.Size = new Size(71, 15);
-            label_medicalRecord_symtpoms.TabIndex = 2;
-            label_medicalRecord_symtpoms.Text = "Симптомы:";
+            label_medialRecord_symtpoms.Anchor = AnchorStyles.None;
+            label_medialRecord_symtpoms.AutoSize = true;
+            label_medialRecord_symtpoms.Font = new Font("Segoe UI", 9F);
+            label_medialRecord_symtpoms.Location = new Point(13, 219);
+            label_medialRecord_symtpoms.Name = "label_medialRecord_symtpoms";
+            label_medialRecord_symtpoms.Size = new Size(71, 15);
+            label_medialRecord_symtpoms.TabIndex = 2;
+            label_medialRecord_symtpoms.Text = "Симптомы:";
             // 
-            // label_medicalRecord_disagnosis
+            // label_medialRecord_disagnosis
             // 
-            label_medicalRecord_disagnosis.Anchor = AnchorStyles.None;
-            label_medicalRecord_disagnosis.AutoSize = true;
-            label_medicalRecord_disagnosis.Font = new Font("Segoe UI", 9F);
-            label_medicalRecord_disagnosis.Location = new Point(21, 68);
-            label_medicalRecord_disagnosis.Name = "label_medicalRecord_disagnosis";
-            label_medicalRecord_disagnosis.Size = new Size(55, 15);
-            label_medicalRecord_disagnosis.TabIndex = 0;
-            label_medicalRecord_disagnosis.Text = "Диагноз:";
+            label_medialRecord_disagnosis.Anchor = AnchorStyles.None;
+            label_medialRecord_disagnosis.AutoSize = true;
+            label_medialRecord_disagnosis.Font = new Font("Segoe UI", 9F);
+            label_medialRecord_disagnosis.Location = new Point(21, 68);
+            label_medialRecord_disagnosis.Name = "label_medialRecord_disagnosis";
+            label_medialRecord_disagnosis.Size = new Size(55, 15);
+            label_medialRecord_disagnosis.TabIndex = 0;
+            label_medialRecord_disagnosis.Text = "Диагноз:";
             // 
             // textBox_medicalRecord_diagnosis
             // 
@@ -205,32 +181,32 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(453, 560);
-            Controls.Add(tableLayoutPanel_Patient_Info);
-            Controls.Add(panel_Buttons);
-            Controls.Add(panel_Header);
+            Controls.Add(tableLayoutPanel_medicalRecords_body);
+            Controls.Add(panel_medicalRecords_buttons);
+            Controls.Add(panel_medicalRecords_header);
             Name = "MedicalRecord";
             Text = "Просмотр записи приема";
-            panel_Buttons.ResumeLayout(false);
-            panel_Header.ResumeLayout(false);
-            tableLayoutPanel_Patient_Info.ResumeLayout(false);
-            tableLayoutPanel_Patient_Info.PerformLayout();
+            panel_medicalRecords_buttons.ResumeLayout(false);
+            panel_medicalRecords_header.ResumeLayout(false);
+            tableLayoutPanel_medicalRecords_body.ResumeLayout(false);
+            tableLayoutPanel_medicalRecords_body.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Panel panel_Buttons;
+        private Panel panel_medicalRecords_buttons;
         private Button button_Save;
         private Button button_Cancel;
-        private Button button_back;
-        private Panel panel_Header;
-        private Label label_formName;
-        private TableLayoutPanel tableLayoutPanel_Patient_Info;
+        private Button button_medicalRecord_back;
+        private Panel panel_medicalRecords_header;
+        private TableLayoutPanel tableLayoutPanel_medicalRecords_body;
         private TextBox textBox_medicalRecord_treatment;
         private TextBox textBox_medicalRecord_symtpoms;
-        private Label label_medicalRecord_symtpoms;
-        private Label label_medicalRecord_disagnosis;
+        private Label label_medialRecord_symtpoms;
+        private Label label_medialRecord_disagnosis;
         private TextBox textBox_medicalRecord_diagnosis;
         private Label label_medicalRecord_treatment;
+        private Label label_medicalRecord_formName;
     }
 }

@@ -2,15 +2,8 @@
 {
     partial class PatientCardsTable
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,209 +15,194 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            panel_Header = new Panel();
-            textBox1 = new TextBox();
-            button_addMedicalDocument = new Button();
-            button_changePatientInfo = new Button();
-            button_back = new Button();
-            label_formName = new Label();
-            dataGridView2 = new DataGridView();
-            patientCards_lastName = new DataGridViewTextBoxColumn();
-            patientCards_firstName = new DataGridViewTextBoxColumn();
-            patientCards_patronymic = new DataGridViewTextBoxColumn();
-            patientCards_phoneNumber = new DataGridViewTextBoxColumn();
-            patientCards_adress = new DataGridViewTextBoxColumn();
-            patientCards_creationDate = new DataGridViewTextBoxColumn();
-            patientCards_lastModified = new DataGridViewTextBoxColumn();
-            patientCards_open = new DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel_Header.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            panel_patinetCards_header = new Panel();
+            textBox_patientCards_findByFIO = new TextBox();
+            button_patintCardsTable_back = new Button();
+            label_patientCards_formName = new Label();
+            dataGridView_patientCardsTable = new DataGridView();
+            column_patientCards_lastName = new DataGridViewTextBoxColumn();
+            column_patientCards_firstName = new DataGridViewTextBoxColumn();
+            column_patientCards_patronymic = new DataGridViewTextBoxColumn();
+            column_patientCards_phoneNumber = new DataGridViewTextBoxColumn();
+            column_patientCards_adress = new DataGridViewTextBoxColumn();
+            column_patientCards_creationDate = new DataGridViewTextBoxColumn();
+            column_patientCards_lastModified = new DataGridViewTextBoxColumn();
+            column_patientCards_open = new DataGridViewButtonColumn();
+            panel1 = new Panel();
+            button_patientCardsTable_addCard = new Button();
+            panel_patinetCards_header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_patientCardsTable).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // dataGridView1
+            // panel_patinetCards_header
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(800, 450);
-            dataGridView1.TabIndex = 10;
+            panel_patinetCards_header.Controls.Add(button_patintCardsTable_back);
+            panel_patinetCards_header.Controls.Add(label_patientCards_formName);
+            panel_patinetCards_header.Dock = DockStyle.Top;
+            panel_patinetCards_header.Location = new Point(0, 0);
+            panel_patinetCards_header.Name = "panel_patinetCards_header";
+            panel_patinetCards_header.Size = new Size(800, 55);
+            panel_patinetCards_header.TabIndex = 11;
             // 
-            // panel_Header
+            // textBox_patientCards_findByFIO
             // 
-            panel_Header.Controls.Add(textBox1);
-            panel_Header.Controls.Add(button_addMedicalDocument);
-            panel_Header.Controls.Add(button_changePatientInfo);
-            panel_Header.Controls.Add(button_back);
-            panel_Header.Controls.Add(label_formName);
-            panel_Header.Dock = DockStyle.Top;
-            panel_Header.Location = new Point(0, 0);
-            panel_Header.Name = "panel_Header";
-            panel_Header.Size = new Size(800, 55);
-            panel_Header.TabIndex = 11;
+            textBox_patientCards_findByFIO.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            textBox_patientCards_findByFIO.AutoCompleteMode = AutoCompleteMode.Suggest;
+            textBox_patientCards_findByFIO.Location = new Point(12, 15);
+            textBox_patientCards_findByFIO.Name = "textBox_patientCards_findByFIO";
+            textBox_patientCards_findByFIO.PlaceholderText = "Поиск по ФИО...";
+            textBox_patientCards_findByFIO.ScrollBars = ScrollBars.Horizontal;
+            textBox_patientCards_findByFIO.Size = new Size(180, 23);
+            textBox_patientCards_findByFIO.TabIndex = 15;
+            textBox_patientCards_findByFIO.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox1
+            // button_patintCardsTable_back
             // 
-            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            textBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
-            textBox1.Location = new Point(608, 16);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Поиск по ФИО...";
-            textBox1.ScrollBars = ScrollBars.Horizontal;
-            textBox1.Size = new Size(180, 23);
-            textBox1.TabIndex = 15;
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            button_patintCardsTable_back.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            button_patintCardsTable_back.Image = Properties.Resources.log_out;
+            button_patintCardsTable_back.ImageAlign = ContentAlignment.MiddleRight;
+            button_patintCardsTable_back.Location = new Point(12, 11);
+            button_patintCardsTable_back.Name = "button_patintCardsTable_back";
+            button_patintCardsTable_back.Size = new Size(90, 30);
+            button_patintCardsTable_back.TabIndex = 6;
+            button_patintCardsTable_back.Text = "Выйти";
+            button_patintCardsTable_back.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button_patintCardsTable_back.UseVisualStyleBackColor = true;
             // 
-            // button_addMedicalDocument
+            // label_patientCards_formName
             // 
-            button_addMedicalDocument.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            button_addMedicalDocument.Image = Properties.Resources.plus;
-            button_addMedicalDocument.ImageAlign = ContentAlignment.MiddleLeft;
-            button_addMedicalDocument.Location = new Point(1242, 12);
-            button_addMedicalDocument.Name = "button_addMedicalDocument";
-            button_addMedicalDocument.Size = new Size(130, 0);
-            button_addMedicalDocument.TabIndex = 8;
-            button_addMedicalDocument.Text = "Добавить запись";
-            button_addMedicalDocument.TextImageRelation = TextImageRelation.TextBeforeImage;
-            button_addMedicalDocument.UseVisualStyleBackColor = true;
+            label_patientCards_formName.Dock = DockStyle.Fill;
+            label_patientCards_formName.Font = new Font("Segoe UI", 11F);
+            label_patientCards_formName.Location = new Point(0, 0);
+            label_patientCards_formName.Name = "label_patientCards_formName";
+            label_patientCards_formName.Size = new Size(800, 55);
+            label_patientCards_formName.TabIndex = 2;
+            label_patientCards_formName.Text = "Медицинские карты пациентов";
+            label_patientCards_formName.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button_changePatientInfo
+            // dataGridView_patientCardsTable
             // 
-            button_changePatientInfo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            button_changePatientInfo.Image = Properties.Resources.pencil;
-            button_changePatientInfo.ImageAlign = ContentAlignment.MiddleLeft;
-            button_changePatientInfo.Location = new Point(1146, 12);
-            button_changePatientInfo.Name = "button_changePatientInfo";
-            button_changePatientInfo.Size = new Size(90, 0);
-            button_changePatientInfo.TabIndex = 7;
-            button_changePatientInfo.Text = "Изменить";
-            button_changePatientInfo.TextImageRelation = TextImageRelation.TextBeforeImage;
-            button_changePatientInfo.UseVisualStyleBackColor = true;
+            dataGridView_patientCardsTable.AllowUserToAddRows = false;
+            dataGridView_patientCardsTable.AllowUserToDeleteRows = false;
+            dataGridView_patientCardsTable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView_patientCardsTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView_patientCardsTable.Columns.AddRange(new DataGridViewColumn[] { column_patientCards_lastName, column_patientCards_firstName, column_patientCards_patronymic, column_patientCards_phoneNumber, column_patientCards_adress, column_patientCards_creationDate, column_patientCards_lastModified, column_patientCards_open });
+            dataGridView_patientCardsTable.Dock = DockStyle.Fill;
+            dataGridView_patientCardsTable.Location = new Point(0, 55);
+            dataGridView_patientCardsTable.Name = "dataGridView_patientCardsTable";
+            dataGridView_patientCardsTable.ReadOnly = true;
+            dataGridView_patientCardsTable.Size = new Size(800, 395);
+            dataGridView_patientCardsTable.TabIndex = 13;
             // 
-            // button_back
+            // column_patientCards_lastName
             // 
-            button_back.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            button_back.Image = Properties.Resources.log_out;
-            button_back.ImageAlign = ContentAlignment.MiddleRight;
-            button_back.Location = new Point(12, 11);
-            button_back.Name = "button_back";
-            button_back.Size = new Size(90, 30);
-            button_back.TabIndex = 6;
-            button_back.Text = "Выйти";
-            button_back.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button_back.UseVisualStyleBackColor = true;
+            column_patientCards_lastName.HeaderText = "Фамилия";
+            column_patientCards_lastName.Name = "column_patientCards_lastName";
+            column_patientCards_lastName.ReadOnly = true;
             // 
-            // label_formName
+            // column_patientCards_firstName
             // 
-            label_formName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label_formName.Font = new Font("Segoe UI", 11F);
-            label_formName.Location = new Point(0, 0);
-            label_formName.Name = "label_formName";
-            label_formName.Size = new Size(800, 55);
-            label_formName.TabIndex = 2;
-            label_formName.Text = "Медицинские карты пациентов";
-            label_formName.TextAlign = ContentAlignment.MiddleCenter;
+            column_patientCards_firstName.HeaderText = "Имя";
+            column_patientCards_firstName.Name = "column_patientCards_firstName";
+            column_patientCards_firstName.ReadOnly = true;
             // 
-            // dataGridView2
+            // column_patientCards_patronymic
             // 
-            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Columns.AddRange(new DataGridViewColumn[] { patientCards_lastName, patientCards_firstName, patientCards_patronymic, patientCards_phoneNumber, patientCards_adress, patientCards_creationDate, patientCards_lastModified, patientCards_open });
-            dataGridView2.Dock = DockStyle.Fill;
-            dataGridView2.Location = new Point(0, 55);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(800, 395);
-            dataGridView2.TabIndex = 13;
+            column_patientCards_patronymic.HeaderText = "Отчество";
+            column_patientCards_patronymic.Name = "column_patientCards_patronymic";
+            column_patientCards_patronymic.ReadOnly = true;
             // 
-            // patientCards_lastName
+            // column_patientCards_phoneNumber
             // 
-            patientCards_lastName.HeaderText = "Фамилия";
-            patientCards_lastName.Name = "patientCards_lastName";
-            patientCards_lastName.ReadOnly = true;
+            column_patientCards_phoneNumber.HeaderText = "Номер телефона";
+            column_patientCards_phoneNumber.Name = "column_patientCards_phoneNumber";
+            column_patientCards_phoneNumber.ReadOnly = true;
             // 
-            // patientCards_firstName
+            // column_patientCards_adress
             // 
-            patientCards_firstName.HeaderText = "Имя";
-            patientCards_firstName.Name = "patientCards_firstName";
-            patientCards_firstName.ReadOnly = true;
+            column_patientCards_adress.HeaderText = "Адрес";
+            column_patientCards_adress.Name = "column_patientCards_adress";
+            column_patientCards_adress.ReadOnly = true;
             // 
-            // patientCards_patronymic
+            // column_patientCards_creationDate
             // 
-            patientCards_patronymic.HeaderText = "Отчество";
-            patientCards_patronymic.Name = "patientCards_patronymic";
-            patientCards_patronymic.ReadOnly = true;
+            column_patientCards_creationDate.HeaderText = "Дата создания";
+            column_patientCards_creationDate.Name = "column_patientCards_creationDate";
+            column_patientCards_creationDate.ReadOnly = true;
             // 
-            // patientCards_phoneNumber
+            // column_patientCards_lastModified
             // 
-            patientCards_phoneNumber.HeaderText = "Номер телефона";
-            patientCards_phoneNumber.Name = "patientCards_phoneNumber";
-            patientCards_phoneNumber.ReadOnly = true;
+            column_patientCards_lastModified.HeaderText = "Дата последнего посещения";
+            column_patientCards_lastModified.Name = "column_patientCards_lastModified";
+            column_patientCards_lastModified.ReadOnly = true;
             // 
-            // patientCards_adress
+            // column_patientCards_open
             // 
-            patientCards_adress.HeaderText = "Адрес";
-            patientCards_adress.Name = "patientCards_adress";
-            patientCards_adress.ReadOnly = true;
+            column_patientCards_open.HeaderText = "";
+            column_patientCards_open.Name = "column_patientCards_open";
+            column_patientCards_open.ReadOnly = true;
+            column_patientCards_open.Text = "Посмотреть";
+            column_patientCards_open.UseColumnTextForButtonValue = true;
             // 
-            // patientCards_creationDate
+            // panel1
             // 
-            patientCards_creationDate.HeaderText = "Дата создания";
-            patientCards_creationDate.Name = "patientCards_creationDate";
-            patientCards_creationDate.ReadOnly = true;
+            panel1.Controls.Add(button_patientCardsTable_addCard);
+            panel1.Controls.Add(textBox_patientCards_findByFIO);
+            panel1.Dock = DockStyle.Bottom;
+            panel1.Location = new Point(0, 400);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(800, 50);
+            panel1.TabIndex = 14;
             // 
-            // patientCards_lastModified
+            // button_patientCardsTable_addCard
             // 
-            patientCards_lastModified.HeaderText = "Дата последнего посещения";
-            patientCards_lastModified.Name = "patientCards_lastModified";
-            patientCards_lastModified.ReadOnly = true;
-            // 
-            // patientCards_open
-            // 
-            patientCards_open.HeaderText = "";
-            patientCards_open.Name = "patientCards_open";
-            patientCards_open.Text = "[ Посмотреть ]";
+            button_patientCardsTable_addCard.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button_patientCardsTable_addCard.Image = Properties.Resources.plus;
+            button_patientCardsTable_addCard.ImageAlign = ContentAlignment.MiddleLeft;
+            button_patientCardsTable_addCard.Location = new Point(658, 10);
+            button_patientCardsTable_addCard.Name = "button_patientCardsTable_addCard";
+            button_patientCardsTable_addCard.Size = new Size(130, 30);
+            button_patientCardsTable_addCard.TabIndex = 16;
+            button_patientCardsTable_addCard.Text = "Добавить карту";
+            button_patientCardsTable_addCard.TextImageRelation = TextImageRelation.TextBeforeImage;
+            button_patientCardsTable_addCard.UseVisualStyleBackColor = true;
             // 
             // PatientCardsTable
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView2);
-            Controls.Add(panel_Header);
-            Controls.Add(dataGridView1);
+            Controls.Add(panel1);
+            Controls.Add(dataGridView_patientCardsTable);
+            Controls.Add(panel_patinetCards_header);
             Name = "PatientCardsTable";
             Text = "Список пациентов";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel_Header.ResumeLayout(false);
-            panel_Header.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            panel_patinetCards_header.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView_patientCardsTable).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-        private DataGridView dataGridView1;
-        private Panel panel_Header;
-        private Button button_addMedicalDocument;
-        private Button button_changePatientInfo;
-        private Button button_back;
-        private DataGridView dataGridView2;
-        private TextBox textBox1;
-        private DataGridViewTextBoxColumn patientCards_lastName;
-        private DataGridViewTextBoxColumn patientCards_firstName;
-        private DataGridViewTextBoxColumn patientCards_patronymic;
-        private DataGridViewTextBoxColumn patientCards_phoneNumber;
-        private DataGridViewTextBoxColumn patientCards_adress;
-        private DataGridViewTextBoxColumn patientCards_creationDate;
-        private DataGridViewTextBoxColumn patientCards_lastModified;
-        private DataGridViewButtonColumn patientCards_open;
-        private Label label_formName;
+
+        private Panel panel_patinetCards_header;
+        private TextBox textBox_patientCards_findByFIO;
+        private Button button_patintCardsTable_back;
+        private Label label_patientCards_formName;
+        private DataGridView dataGridView_patientCardsTable;
+        private DataGridViewTextBoxColumn column_patientCards_lastName;
+        private DataGridViewTextBoxColumn column_patientCards_firstName;
+        private DataGridViewTextBoxColumn column_patientCards_patronymic;
+        private DataGridViewTextBoxColumn column_patientCards_phoneNumber;
+        private DataGridViewTextBoxColumn column_patientCards_adress;
+        private DataGridViewTextBoxColumn column_patientCards_creationDate;
+        private DataGridViewTextBoxColumn column_patientCards_lastModified;
+        private DataGridViewButtonColumn column_patientCards_open;
+        private Panel panel1;
+        private Button button_patientCardsTable_addCard;
     }
 }

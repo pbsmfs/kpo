@@ -31,13 +31,11 @@
             panel_Header = new Panel();
             button_addMedicalDocument = new Button();
             button_changePatientInfo = new Button();
-            button_back = new Button();
+            button_patientCard_back = new Button();
             label_formName = new Label();
             splitContainer_body = new SplitContainer();
             tableLayoutPanel_Patient_Info = new TableLayoutPanel();
             label_patient_phoneNumber = new Label();
-            label_patient_firstName = new Label();
-            label_patient_lastName = new Label();
             textBox_patient_lastName = new TextBox();
             label_patient_patronymic = new Label();
             label_patient_gender = new Label();
@@ -49,20 +47,22 @@
             textBox_patient_birthday = new TextBox();
             textBox_patient_phoneNumber = new TextBox();
             textBox_patient_adress = new TextBox();
+            label_patient_firstName = new Label();
+            label_patient_lastName = new Label();
             tabControl_patient_medicalDocuments = new TabControl();
-            tabPage_Patient_MedicalRecords = new TabPage();
+            tabPage_patient_MedicalRecords = new TabPage();
             dataGridView_patient_medicalRecords = new DataGridView();
-            medicalRecord_date = new DataGridViewTextBoxColumn();
-            medicalRecord_diagnosis = new DataGridViewTextBoxColumn();
-            medicalRecord_author = new DataGridViewTextBoxColumn();
-            medicalRecord_open = new DataGridViewButtonColumn();
-            tabPage_Patient_ExaminationResult = new TabPage();
+            tabPage_patient_ExaminationResult = new TabPage();
             dataGridView_patient_examinationResults = new DataGridView();
-            examinationResult_date = new DataGridViewTextBoxColumn();
-            examinationResult_type = new DataGridViewTextBoxColumn();
-            examinationResult_result = new DataGridViewTextBoxColumn();
-            examinationResult_author = new DataGridViewTextBoxColumn();
-            examinationResult_open = new DataGridViewButtonColumn();
+            column_medicalRecord_date = new DataGridViewTextBoxColumn();
+            column_medicalRecord_diagnosis = new DataGridViewTextBoxColumn();
+            column_medicalRecord_author = new DataGridViewTextBoxColumn();
+            medicalRecord_open = new DataGridViewButtonColumn();
+            column_examinationResult_date = new DataGridViewTextBoxColumn();
+            column_examinationResult_type = new DataGridViewTextBoxColumn();
+            column_examinationResult_result = new DataGridViewTextBoxColumn();
+            column_examinationResult_author = new DataGridViewTextBoxColumn();
+            column_examinationResult_open = new DataGridViewButtonColumn();
             panel_Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer_body).BeginInit();
             splitContainer_body.Panel1.SuspendLayout();
@@ -70,9 +70,9 @@
             splitContainer_body.SuspendLayout();
             tableLayoutPanel_Patient_Info.SuspendLayout();
             tabControl_patient_medicalDocuments.SuspendLayout();
-            tabPage_Patient_MedicalRecords.SuspendLayout();
+            tabPage_patient_MedicalRecords.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView_patient_medicalRecords).BeginInit();
-            tabPage_Patient_ExaminationResult.SuspendLayout();
+            tabPage_patient_ExaminationResult.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView_patient_examinationResults).BeginInit();
             SuspendLayout();
             // 
@@ -80,7 +80,7 @@
             // 
             panel_Header.Controls.Add(button_addMedicalDocument);
             panel_Header.Controls.Add(button_changePatientInfo);
-            panel_Header.Controls.Add(button_back);
+            panel_Header.Controls.Add(button_patientCard_back);
             panel_Header.Controls.Add(label_formName);
             panel_Header.Dock = DockStyle.Top;
             panel_Header.Location = new Point(0, 0);
@@ -114,22 +114,22 @@
             button_changePatientInfo.TextImageRelation = TextImageRelation.TextBeforeImage;
             button_changePatientInfo.UseVisualStyleBackColor = true;
             // 
-            // button_back
+            // button_patientCard_back
             // 
-            button_back.Image = Properties.Resources.back_arrow;
-            button_back.ImageAlign = ContentAlignment.MiddleRight;
-            button_back.Location = new Point(10, 13);
-            button_back.Name = "button_back";
-            button_back.Size = new Size(90, 30);
-            button_back.TabIndex = 6;
-            button_back.Text = "Назад";
-            button_back.TextAlign = ContentAlignment.MiddleLeft;
-            button_back.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button_back.UseVisualStyleBackColor = true;
+            button_patientCard_back.Image = Properties.Resources.back_arrow;
+            button_patientCard_back.ImageAlign = ContentAlignment.MiddleRight;
+            button_patientCard_back.Location = new Point(10, 13);
+            button_patientCard_back.Name = "button_patientCard_back";
+            button_patientCard_back.Size = new Size(90, 30);
+            button_patientCard_back.TabIndex = 6;
+            button_patientCard_back.Text = "Назад";
+            button_patientCard_back.TextAlign = ContentAlignment.MiddleLeft;
+            button_patientCard_back.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button_patientCard_back.UseVisualStyleBackColor = true;
             // 
             // label_formName
             // 
-            label_formName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label_formName.Dock = DockStyle.Fill;
             label_formName.Font = new Font("Segoe UI", 11F);
             label_formName.Location = new Point(0, 0);
             label_formName.Name = "label_formName";
@@ -200,28 +200,6 @@
             label_patient_phoneNumber.Size = new Size(104, 15);
             label_patient_phoneNumber.TabIndex = 3;
             label_patient_phoneNumber.Text = "Номер телефона:";
-            // 
-            // label_patient_firstName
-            // 
-            label_patient_firstName.Anchor = AnchorStyles.None;
-            label_patient_firstName.AutoSize = true;
-            label_patient_firstName.Font = new Font("Segoe UI", 9F);
-            label_patient_firstName.Location = new Point(56, 76);
-            label_patient_firstName.Name = "label_patient_firstName";
-            label_patient_firstName.Size = new Size(34, 15);
-            label_patient_firstName.TabIndex = 2;
-            label_patient_firstName.Text = "Имя:";
-            // 
-            // label_patient_lastName
-            // 
-            label_patient_lastName.Anchor = AnchorStyles.None;
-            label_patient_lastName.AutoSize = true;
-            label_patient_lastName.Font = new Font("Segoe UI", 9F);
-            label_patient_lastName.Location = new Point(43, 20);
-            label_patient_lastName.Name = "label_patient_lastName";
-            label_patient_lastName.Size = new Size(61, 15);
-            label_patient_lastName.TabIndex = 0;
-            label_patient_lastName.Text = "Фамилия:";
             // 
             // textBox_patient_lastName
             // 
@@ -324,10 +302,32 @@
             textBox_patient_adress.Size = new Size(100, 23);
             textBox_patient_adress.TabIndex = 12;
             // 
+            // label_patient_firstName
+            // 
+            label_patient_firstName.Anchor = AnchorStyles.None;
+            label_patient_firstName.AutoSize = true;
+            label_patient_firstName.Font = new Font("Segoe UI", 9F);
+            label_patient_firstName.Location = new Point(56, 76);
+            label_patient_firstName.Name = "label_patient_firstName";
+            label_patient_firstName.Size = new Size(34, 15);
+            label_patient_firstName.TabIndex = 2;
+            label_patient_firstName.Text = "Имя:";
+            // 
+            // label_patient_lastName
+            // 
+            label_patient_lastName.Anchor = AnchorStyles.None;
+            label_patient_lastName.AutoSize = true;
+            label_patient_lastName.Font = new Font("Segoe UI", 9F);
+            label_patient_lastName.Location = new Point(43, 20);
+            label_patient_lastName.Name = "label_patient_lastName";
+            label_patient_lastName.Size = new Size(61, 15);
+            label_patient_lastName.TabIndex = 0;
+            label_patient_lastName.Text = "Фамилия:";
+            // 
             // tabControl_patient_medicalDocuments
             // 
-            tabControl_patient_medicalDocuments.Controls.Add(tabPage_Patient_MedicalRecords);
-            tabControl_patient_medicalDocuments.Controls.Add(tabPage_Patient_ExaminationResult);
+            tabControl_patient_medicalDocuments.Controls.Add(tabPage_patient_MedicalRecords);
+            tabControl_patient_medicalDocuments.Controls.Add(tabPage_patient_ExaminationResult);
             tabControl_patient_medicalDocuments.Dock = DockStyle.Fill;
             tabControl_patient_medicalDocuments.Location = new Point(0, 0);
             tabControl_patient_medicalDocuments.Name = "tabControl_patient_medicalDocuments";
@@ -335,47 +335,75 @@
             tabControl_patient_medicalDocuments.Size = new Size(418, 395);
             tabControl_patient_medicalDocuments.TabIndex = 3;
             // 
-            // tabPage_Patient_MedicalRecords
+            // tabPage_patient_MedicalRecords
             // 
-            tabPage_Patient_MedicalRecords.Controls.Add(dataGridView_patient_medicalRecords);
-            tabPage_Patient_MedicalRecords.Location = new Point(4, 24);
-            tabPage_Patient_MedicalRecords.Name = "tabPage_Patient_MedicalRecords";
-            tabPage_Patient_MedicalRecords.Padding = new Padding(3);
-            tabPage_Patient_MedicalRecords.Size = new Size(410, 367);
-            tabPage_Patient_MedicalRecords.TabIndex = 0;
-            tabPage_Patient_MedicalRecords.Text = "Записи приемов";
-            tabPage_Patient_MedicalRecords.UseVisualStyleBackColor = true;
+            tabPage_patient_MedicalRecords.Controls.Add(dataGridView_patient_medicalRecords);
+            tabPage_patient_MedicalRecords.Location = new Point(4, 24);
+            tabPage_patient_MedicalRecords.Name = "tabPage_patient_MedicalRecords";
+            tabPage_patient_MedicalRecords.Padding = new Padding(3);
+            tabPage_patient_MedicalRecords.Size = new Size(410, 367);
+            tabPage_patient_MedicalRecords.TabIndex = 0;
+            tabPage_patient_MedicalRecords.Text = "Записи приемов";
+            tabPage_patient_MedicalRecords.UseVisualStyleBackColor = true;
             // 
             // dataGridView_patient_medicalRecords
             // 
+            dataGridView_patient_medicalRecords.AllowUserToAddRows = false;
+            dataGridView_patient_medicalRecords.AllowUserToDeleteRows = false;
             dataGridView_patient_medicalRecords.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView_patient_medicalRecords.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView_patient_medicalRecords.Columns.AddRange(new DataGridViewColumn[] { medicalRecord_date, medicalRecord_diagnosis, medicalRecord_author, medicalRecord_open });
+            dataGridView_patient_medicalRecords.Columns.AddRange(new DataGridViewColumn[] { column_medicalRecord_date, column_medicalRecord_diagnosis, column_medicalRecord_author, medicalRecord_open });
             dataGridView_patient_medicalRecords.Dock = DockStyle.Fill;
             dataGridView_patient_medicalRecords.Location = new Point(3, 3);
             dataGridView_patient_medicalRecords.Name = "dataGridView_patient_medicalRecords";
+            dataGridView_patient_medicalRecords.ReadOnly = true;
             dataGridView_patient_medicalRecords.Size = new Size(404, 361);
             dataGridView_patient_medicalRecords.TabIndex = 0;
             // 
-            // medicalRecord_date
+            // tabPage_patient_ExaminationResult
             // 
-            medicalRecord_date.HeaderText = "Дата приема";
-            medicalRecord_date.Name = "medicalRecord_date";
-            medicalRecord_date.ReadOnly = true;
-            medicalRecord_date.Resizable = DataGridViewTriState.True;
+            tabPage_patient_ExaminationResult.Controls.Add(dataGridView_patient_examinationResults);
+            tabPage_patient_ExaminationResult.Location = new Point(4, 24);
+            tabPage_patient_ExaminationResult.Name = "tabPage_patient_ExaminationResult";
+            tabPage_patient_ExaminationResult.Padding = new Padding(3);
+            tabPage_patient_ExaminationResult.Size = new Size(410, 367);
+            tabPage_patient_ExaminationResult.TabIndex = 1;
+            tabPage_patient_ExaminationResult.Text = "Результаты анализов";
+            tabPage_patient_ExaminationResult.UseVisualStyleBackColor = true;
             // 
-            // medicalRecord_diagnosis
+            // dataGridView_patient_examinationResults
             // 
-            medicalRecord_diagnosis.HeaderText = "Диагноз";
-            medicalRecord_diagnosis.Name = "medicalRecord_diagnosis";
-            medicalRecord_diagnosis.ReadOnly = true;
-            medicalRecord_diagnosis.Resizable = DataGridViewTriState.True;
+            dataGridView_patient_examinationResults.AllowUserToAddRows = false;
+            dataGridView_patient_examinationResults.AllowUserToDeleteRows = false;
+            dataGridView_patient_examinationResults.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView_patient_examinationResults.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView_patient_examinationResults.Columns.AddRange(new DataGridViewColumn[] { column_examinationResult_date, column_examinationResult_type, column_examinationResult_result, column_examinationResult_author, column_examinationResult_open });
+            dataGridView_patient_examinationResults.Dock = DockStyle.Fill;
+            dataGridView_patient_examinationResults.Location = new Point(3, 3);
+            dataGridView_patient_examinationResults.Name = "dataGridView_patient_examinationResults";
+            dataGridView_patient_examinationResults.ReadOnly = true;
+            dataGridView_patient_examinationResults.Size = new Size(404, 361);
+            dataGridView_patient_examinationResults.TabIndex = 0;
             // 
-            // medicalRecord_author
+            // column_medicalRecord_date
             // 
-            medicalRecord_author.HeaderText = "Врач";
-            medicalRecord_author.Name = "medicalRecord_author";
-            medicalRecord_author.ReadOnly = true;
+            column_medicalRecord_date.HeaderText = "Дата приема";
+            column_medicalRecord_date.Name = "column_medicalRecord_date";
+            column_medicalRecord_date.ReadOnly = true;
+            column_medicalRecord_date.Resizable = DataGridViewTriState.True;
+            // 
+            // column_medicalRecord_diagnosis
+            // 
+            column_medicalRecord_diagnosis.HeaderText = "Диагноз";
+            column_medicalRecord_diagnosis.Name = "column_medicalRecord_diagnosis";
+            column_medicalRecord_diagnosis.ReadOnly = true;
+            column_medicalRecord_diagnosis.Resizable = DataGridViewTriState.True;
+            // 
+            // column_medicalRecord_author
+            // 
+            column_medicalRecord_author.HeaderText = "Врач";
+            column_medicalRecord_author.Name = "column_medicalRecord_author";
+            column_medicalRecord_author.ReadOnly = true;
             // 
             // medicalRecord_open
             // 
@@ -386,60 +414,38 @@
             medicalRecord_open.SortMode = DataGridViewColumnSortMode.Automatic;
             medicalRecord_open.Text = "[ Посмотреть ]";
             // 
-            // tabPage_Patient_ExaminationResult
+            // column_examinationResult_date
             // 
-            tabPage_Patient_ExaminationResult.Controls.Add(dataGridView_patient_examinationResults);
-            tabPage_Patient_ExaminationResult.Location = new Point(4, 24);
-            tabPage_Patient_ExaminationResult.Name = "tabPage_Patient_ExaminationResult";
-            tabPage_Patient_ExaminationResult.Padding = new Padding(3);
-            tabPage_Patient_ExaminationResult.Size = new Size(410, 367);
-            tabPage_Patient_ExaminationResult.TabIndex = 1;
-            tabPage_Patient_ExaminationResult.Text = "Результаты анализов";
-            tabPage_Patient_ExaminationResult.UseVisualStyleBackColor = true;
+            column_examinationResult_date.HeaderText = "Дата анализа";
+            column_examinationResult_date.Name = "column_examinationResult_date";
+            column_examinationResult_date.ReadOnly = true;
             // 
-            // dataGridView_patient_examinationResults
+            // column_examinationResult_type
             // 
-            dataGridView_patient_examinationResults.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView_patient_examinationResults.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView_patient_examinationResults.Columns.AddRange(new DataGridViewColumn[] { examinationResult_date, examinationResult_type, examinationResult_result, examinationResult_author, examinationResult_open });
-            dataGridView_patient_examinationResults.Dock = DockStyle.Fill;
-            dataGridView_patient_examinationResults.Location = new Point(3, 3);
-            dataGridView_patient_examinationResults.Name = "dataGridView_patient_examinationResults";
-            dataGridView_patient_examinationResults.Size = new Size(404, 361);
-            dataGridView_patient_examinationResults.TabIndex = 0;
+            column_examinationResult_type.HeaderText = "Тип анализа";
+            column_examinationResult_type.Name = "column_examinationResult_type";
+            column_examinationResult_type.ReadOnly = true;
             // 
-            // examinationResult_date
+            // column_examinationResult_result
             // 
-            examinationResult_date.HeaderText = "Дата анализа";
-            examinationResult_date.Name = "examinationResult_date";
-            examinationResult_date.ReadOnly = true;
+            column_examinationResult_result.HeaderText = "Заключение";
+            column_examinationResult_result.Name = "column_examinationResult_result";
+            column_examinationResult_result.ReadOnly = true;
             // 
-            // examinationResult_type
+            // column_examinationResult_author
             // 
-            examinationResult_type.HeaderText = "Тип анализа";
-            examinationResult_type.Name = "examinationResult_type";
-            examinationResult_type.ReadOnly = true;
+            column_examinationResult_author.HeaderText = "Врач";
+            column_examinationResult_author.Name = "column_examinationResult_author";
+            column_examinationResult_author.ReadOnly = true;
             // 
-            // examinationResult_result
+            // column_examinationResult_open
             // 
-            examinationResult_result.HeaderText = "Результат";
-            examinationResult_result.Name = "examinationResult_result";
-            examinationResult_result.ReadOnly = true;
-            // 
-            // examinationResult_author
-            // 
-            examinationResult_author.HeaderText = "Врач";
-            examinationResult_author.Name = "examinationResult_author";
-            examinationResult_author.ReadOnly = true;
-            // 
-            // examinationResult_open
-            // 
-            examinationResult_open.HeaderText = "";
-            examinationResult_open.Name = "examinationResult_open";
-            examinationResult_open.ReadOnly = true;
-            examinationResult_open.Resizable = DataGridViewTriState.True;
-            examinationResult_open.SortMode = DataGridViewColumnSortMode.Automatic;
-            examinationResult_open.Text = "[ Посмотреть ]";
+            column_examinationResult_open.HeaderText = "";
+            column_examinationResult_open.Name = "column_examinationResult_open";
+            column_examinationResult_open.ReadOnly = true;
+            column_examinationResult_open.Resizable = DataGridViewTriState.True;
+            column_examinationResult_open.SortMode = DataGridViewColumnSortMode.Automatic;
+            column_examinationResult_open.Text = "[ Посмотреть ]";
             // 
             // PatientCard
             // 
@@ -459,9 +465,9 @@
             tableLayoutPanel_Patient_Info.ResumeLayout(false);
             tableLayoutPanel_Patient_Info.PerformLayout();
             tabControl_patient_medicalDocuments.ResumeLayout(false);
-            tabPage_Patient_MedicalRecords.ResumeLayout(false);
+            tabPage_patient_MedicalRecords.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView_patient_medicalRecords).EndInit();
-            tabPage_Patient_ExaminationResult.ResumeLayout(false);
+            tabPage_patient_ExaminationResult.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView_patient_examinationResults).EndInit();
             ResumeLayout(false);
         }
@@ -471,7 +477,7 @@
         private Panel panel_Header;
         private Button button_addMedicalDocument;
         private Button button_changePatientInfo;
-        private Button button_back;
+        private Button button_patientCard_back;
         private SplitContainer splitContainer_body;
         private TableLayoutPanel tableLayoutPanel_Patient_Info;
         private Label label_patient_phoneNumber;
@@ -489,19 +495,19 @@
         private TextBox textBox_patient_phoneNumber;
         private TextBox textBox_patient_adress;
         private TabControl tabControl_patient_medicalDocuments;
-        protected internal TabPage tabPage_Patient_MedicalRecords;
+        protected internal TabPage tabPage_patient_MedicalRecords;
         private DataGridView dataGridView_patient_medicalRecords;
-        private DataGridViewTextBoxColumn medicalRecord_date;
-        private DataGridViewTextBoxColumn medicalRecord_diagnosis;
-        private DataGridViewTextBoxColumn medicalRecord_author;
-        private DataGridViewButtonColumn medicalRecord_open;
-        private TabPage tabPage_Patient_ExaminationResult;
+        private TabPage tabPage_patient_ExaminationResult;
         private DataGridView dataGridView_patient_examinationResults;
-        private DataGridViewTextBoxColumn examinationResult_date;
-        private DataGridViewTextBoxColumn examinationResult_type;
-        private DataGridViewTextBoxColumn examinationResult_result;
-        private DataGridViewTextBoxColumn examinationResult_author;
-        private DataGridViewButtonColumn examinationResult_open;
         private Label label_formName;
+        private DataGridViewTextBoxColumn column_medicalRecord_date;
+        private DataGridViewTextBoxColumn column_medicalRecord_diagnosis;
+        private DataGridViewTextBoxColumn column_medicalRecord_author;
+        private DataGridViewButtonColumn medicalRecord_open;
+        private DataGridViewTextBoxColumn column_examinationResult_date;
+        private DataGridViewTextBoxColumn column_examinationResult_type;
+        private DataGridViewTextBoxColumn column_examinationResult_result;
+        private DataGridViewTextBoxColumn column_examinationResult_author;
+        private DataGridViewButtonColumn column_examinationResult_open;
     }
 }
