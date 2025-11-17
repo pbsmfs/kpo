@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace WinForms
 {
-    public partial class PatientCardForm : Form
+    public partial class PatientCardsTable : Form
     {
-        public PatientCardForm()
+        public PatientCardsTable()
         {
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label_Form_Name_Click(object sender, EventArgs e)
+        private void label_formName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
 
         }
