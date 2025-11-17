@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             panel_Buttons = new Panel();
+            button_back = new Button();
             button_Save = new Button();
             button_Cancel = new Button();
+            panel_Header = new Panel();
+            label_formName = new Label();
             tableLayoutPanel_Patient_Info = new TableLayoutPanel();
             textBox_medicalRecord_treatment = new TextBox();
             textBox_medicalRecord_symtpoms = new TextBox();
@@ -38,12 +41,9 @@
             label_medicalRecord_disagnosis = new Label();
             textBox_medicalRecord_diagnosis = new TextBox();
             label_medicalRecord_treatment = new Label();
-            button_back = new Button();
-            panel_Header = new Panel();
-            label_formName = new Label();
             panel_Buttons.SuspendLayout();
-            tableLayoutPanel_Patient_Info.SuspendLayout();
             panel_Header.SuspendLayout();
+            tableLayoutPanel_Patient_Info.SuspendLayout();
             SuspendLayout();
             // 
             // panel_Buttons
@@ -56,6 +56,20 @@
             panel_Buttons.Name = "panel_Buttons";
             panel_Buttons.Size = new Size(453, 50);
             panel_Buttons.TabIndex = 6;
+            // 
+            // button_back
+            // 
+            button_back.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button_back.Image = Properties.Resources.back_arrow;
+            button_back.ImageAlign = ContentAlignment.MiddleRight;
+            button_back.Location = new Point(363, 8);
+            button_back.Name = "button_back";
+            button_back.Size = new Size(80, 30);
+            button_back.TabIndex = 2;
+            button_back.Text = "Назад";
+            button_back.TextAlign = ContentAlignment.MiddleLeft;
+            button_back.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button_back.UseVisualStyleBackColor = true;
             // 
             // button_Save
             // 
@@ -76,6 +90,26 @@
             button_Cancel.TabIndex = 0;
             button_Cancel.Text = "Отмена";
             button_Cancel.UseVisualStyleBackColor = true;
+            // 
+            // panel_Header
+            // 
+            panel_Header.Controls.Add(label_formName);
+            panel_Header.Dock = DockStyle.Top;
+            panel_Header.Location = new Point(0, 0);
+            panel_Header.Name = "panel_Header";
+            panel_Header.Size = new Size(453, 55);
+            panel_Header.TabIndex = 5;
+            // 
+            // label_formName
+            // 
+            label_formName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label_formName.Font = new Font("Segoe UI", 11F);
+            label_formName.Location = new Point(0, 0);
+            label_formName.Name = "label_formName";
+            label_formName.Size = new Size(453, 55);
+            label_formName.TabIndex = 3;
+            label_formName.Text = "Просмотр записи приема:";
+            label_formName.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel_Patient_Info
             // 
@@ -98,7 +132,7 @@
             tableLayoutPanel_Patient_Info.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
             tableLayoutPanel_Patient_Info.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
             tableLayoutPanel_Patient_Info.Size = new Size(453, 455);
-            tableLayoutPanel_Patient_Info.TabIndex = 11;
+            tableLayoutPanel_Patient_Info.TabIndex = 12;
             // 
             // textBox_medicalRecord_treatment
             // 
@@ -166,40 +200,6 @@
             label_medicalRecord_treatment.TabIndex = 3;
             label_medicalRecord_treatment.Text = "Назначенное лечение:";
             // 
-            // button_back
-            // 
-            button_back.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button_back.Image = Properties.Resources.back_arrow;
-            button_back.ImageAlign = ContentAlignment.MiddleRight;
-            button_back.Location = new Point(363, 8);
-            button_back.Name = "button_back";
-            button_back.Size = new Size(80, 30);
-            button_back.TabIndex = 2;
-            button_back.Text = "Назад";
-            button_back.TextAlign = ContentAlignment.MiddleLeft;
-            button_back.TextImageRelation = TextImageRelation.ImageBeforeText;
-            button_back.UseVisualStyleBackColor = true;
-            // 
-            // panel_Header
-            // 
-            panel_Header.Controls.Add(label_formName);
-            panel_Header.Dock = DockStyle.Top;
-            panel_Header.Location = new Point(0, 0);
-            panel_Header.Name = "panel_Header";
-            panel_Header.Size = new Size(453, 55);
-            panel_Header.TabIndex = 5;
-            // 
-            // label_formName
-            // 
-            label_formName.Dock = DockStyle.Fill;
-            label_formName.Font = new Font("Segoe UI", 11F);
-            label_formName.Location = new Point(0, 0);
-            label_formName.Name = "label_formName";
-            label_formName.Size = new Size(453, 55);
-            label_formName.TabIndex = 3;
-            label_formName.Text = "Просмотр записи приема";
-            label_formName.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // MedicalRecord
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -211,9 +211,9 @@
             Name = "MedicalRecord";
             Text = "Просмотр записи приема";
             panel_Buttons.ResumeLayout(false);
+            panel_Header.ResumeLayout(false);
             tableLayoutPanel_Patient_Info.ResumeLayout(false);
             tableLayoutPanel_Patient_Info.PerformLayout();
-            panel_Header.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -222,6 +222,9 @@
         private Panel panel_Buttons;
         private Button button_Save;
         private Button button_Cancel;
+        private Button button_back;
+        private Panel panel_Header;
+        private Label label_formName;
         private TableLayoutPanel tableLayoutPanel_Patient_Info;
         private TextBox textBox_medicalRecord_treatment;
         private TextBox textBox_medicalRecord_symtpoms;
@@ -229,8 +232,5 @@
         private Label label_medicalRecord_disagnosis;
         private TextBox textBox_medicalRecord_diagnosis;
         private Label label_medicalRecord_treatment;
-        private Button button_back;
-        private Panel panel_Header;
-        private Label label_formName;
     }
 }

@@ -45,7 +45,7 @@
             // 
             // label_formName
             // 
-            label_formName.Dock = DockStyle.Fill;
+            label_formName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label_formName.Font = new Font("Segoe UI", 11F);
             label_formName.Location = new Point(0, 0);
             label_formName.Name = "label_formName";

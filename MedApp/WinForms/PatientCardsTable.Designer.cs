@@ -34,6 +34,7 @@
             button_addMedicalDocument = new Button();
             button_changePatientInfo = new Button();
             button_back = new Button();
+            label_formName = new Label();
             dataGridView2 = new DataGridView();
             patientCards_lastName = new DataGridViewTextBoxColumn();
             patientCards_firstName = new DataGridViewTextBoxColumn();
@@ -43,7 +44,6 @@
             patientCards_creationDate = new DataGridViewTextBoxColumn();
             patientCards_lastModified = new DataGridViewTextBoxColumn();
             patientCards_open = new DataGridViewButtonColumn();
-            label_formName = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel_Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
@@ -122,6 +122,17 @@
             button_back.TextImageRelation = TextImageRelation.ImageBeforeText;
             button_back.UseVisualStyleBackColor = true;
             // 
+            // label_formName
+            // 
+            label_formName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label_formName.Font = new Font("Segoe UI", 11F);
+            label_formName.Location = new Point(0, 0);
+            label_formName.Name = "label_formName";
+            label_formName.Size = new Size(800, 55);
+            label_formName.TabIndex = 2;
+            label_formName.Text = "Медицинские карты пациентов";
+            label_formName.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // dataGridView2
             // 
             dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -180,17 +191,6 @@
             patientCards_open.HeaderText = "";
             patientCards_open.Name = "patientCards_open";
             patientCards_open.Text = "[ Посмотреть ]";
-            // 
-            // label_formName
-            // 
-            label_formName.Dock = DockStyle.Fill;
-            label_formName.Font = new Font("Segoe UI", 11F);
-            label_formName.Location = new Point(0, 0);
-            label_formName.Name = "label_formName";
-            label_formName.Size = new Size(800, 55);
-            label_formName.TabIndex = 2;
-            label_formName.Text = "Медицинские карты пациентов";
-            label_formName.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // PatientCardsTable
             // 

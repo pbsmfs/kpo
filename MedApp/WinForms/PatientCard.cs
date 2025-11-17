@@ -16,20 +16,5 @@ namespace WinForms
         {
             InitializeComponent();
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label_Form_Name_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView_patient_medicalRecords_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }
