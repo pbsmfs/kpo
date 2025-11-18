@@ -46,15 +46,15 @@
             panel_examinationResultCreation_buttons.Controls.Add(button_examinationResultCreation_save);
             panel_examinationResultCreation_buttons.Controls.Add(button_examinationResultCreation_back);
             panel_examinationResultCreation_buttons.Dock = DockStyle.Bottom;
-            panel_examinationResultCreation_buttons.Location = new Point(0, 510);
+            panel_examinationResultCreation_buttons.Location = new Point(0, 511);
             panel_examinationResultCreation_buttons.Name = "panel_examinationResultCreation_buttons";
-            panel_examinationResultCreation_buttons.Size = new Size(453, 50);
+            panel_examinationResultCreation_buttons.Size = new Size(384, 50);
             panel_examinationResultCreation_buttons.TabIndex = 15;
             // 
             // button_examinationResultCreation_save
             // 
             button_examinationResultCreation_save.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button_examinationResultCreation_save.Location = new Point(363, 10);
+            button_examinationResultCreation_save.Location = new Point(294, 10);
             button_examinationResultCreation_save.Name = "button_examinationResultCreation_save";
             button_examinationResultCreation_save.Size = new Size(80, 30);
             button_examinationResultCreation_save.TabIndex = 3;
@@ -64,7 +64,7 @@
             // button_examinationResultCreation_back
             // 
             button_examinationResultCreation_back.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button_examinationResultCreation_back.Location = new Point(277, 10);
+            button_examinationResultCreation_back.Location = new Point(208, 10);
             button_examinationResultCreation_back.Name = "button_examinationResultCreation_back";
             button_examinationResultCreation_back.Size = new Size(80, 30);
             button_examinationResultCreation_back.TabIndex = 2;
@@ -77,7 +77,7 @@
             panel_examinationResult_header.Dock = DockStyle.Top;
             panel_examinationResult_header.Location = new Point(0, 0);
             panel_examinationResult_header.Name = "panel_examinationResult_header";
-            panel_examinationResult_header.Size = new Size(453, 55);
+            panel_examinationResult_header.Size = new Size(384, 55);
             panel_examinationResult_header.TabIndex = 16;
             // 
             // label_examinationResult_formName
@@ -86,7 +86,7 @@
             label_examinationResult_formName.Font = new Font("Segoe UI", 11F);
             label_examinationResult_formName.Location = new Point(0, 0);
             label_examinationResult_formName.Name = "label_examinationResult_formName";
-            label_examinationResult_formName.Size = new Size(453, 55);
+            label_examinationResult_formName.Size = new Size(384, 55);
             label_examinationResult_formName.TabIndex = 5;
             label_examinationResult_formName.Text = "Создание результата анализов";
             label_examinationResult_formName.TextAlign = ContentAlignment.MiddleCenter;
@@ -106,7 +106,7 @@
             // splitContainer_examinationResultCreation_body.Panel2
             // 
             splitContainer_examinationResultCreation_body.Panel2.Controls.Add(dataGridView_examinationResultCreation);
-            splitContainer_examinationResultCreation_body.Size = new Size(453, 455);
+            splitContainer_examinationResultCreation_body.Size = new Size(384, 456);
             splitContainer_examinationResultCreation_body.SplitterDistance = 51;
             splitContainer_examinationResultCreation_body.TabIndex = 17;
             // 
@@ -124,7 +124,7 @@
             tableLayoutPanel_examinationResultCreation.Name = "tableLayoutPanel_examinationResultCreation";
             tableLayoutPanel_examinationResultCreation.RowCount = 1;
             tableLayoutPanel_examinationResultCreation.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
-            tableLayoutPanel_examinationResultCreation.Size = new Size(453, 51);
+            tableLayoutPanel_examinationResultCreation.Size = new Size(384, 51);
             tableLayoutPanel_examinationResultCreation.TabIndex = 16;
             // 
             // label_examinationResult_type
@@ -132,9 +132,9 @@
             label_examinationResult_type.Anchor = AnchorStyles.None;
             label_examinationResult_type.AutoSize = true;
             label_examinationResult_type.Font = new Font("Segoe UI", 9F);
-            label_examinationResult_type.Location = new Point(10, 18);
+            label_examinationResult_type.Location = new Point(14, 10);
             label_examinationResult_type.Name = "label_examinationResult_type";
-            label_examinationResult_type.Size = new Size(78, 15);
+            label_examinationResult_type.Size = new Size(54, 30);
             label_examinationResult_type.TabIndex = 0;
             label_examinationResult_type.Text = "Тип анализа:";
             // 
@@ -142,10 +142,10 @@
             // 
             textBox_examinationResult_type.Anchor = AnchorStyles.None;
             textBox_examinationResult_type.Font = new Font("Segoe UI", 11F);
-            textBox_examinationResult_type.Location = new Point(108, 12);
+            textBox_examinationResult_type.Location = new Point(93, 12);
             textBox_examinationResult_type.Margin = new Padding(10);
             textBox_examinationResult_type.Name = "textBox_examinationResult_type";
-            textBox_examinationResult_type.Size = new Size(335, 27);
+            textBox_examinationResult_type.Size = new Size(281, 27);
             textBox_examinationResult_type.TabIndex = 1;
             // 
             // dataGridView_examinationResultCreation
@@ -156,7 +156,7 @@
             dataGridView_examinationResultCreation.Dock = DockStyle.Fill;
             dataGridView_examinationResultCreation.Location = new Point(0, 0);
             dataGridView_examinationResultCreation.Name = "dataGridView_examinationResultCreation";
-            dataGridView_examinationResultCreation.Size = new Size(453, 400);
+            dataGridView_examinationResultCreation.Size = new Size(384, 401);
             dataGridView_examinationResultCreation.TabIndex = 0;
             // 
             // column_examinationResult_parametr
@@ -183,7 +183,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(453, 560);
+            ClientSize = new Size(384, 561);
             Controls.Add(splitContainer_examinationResultCreation_body);
             Controls.Add(panel_examinationResult_header);
             Controls.Add(panel_examinationResultCreation_buttons);

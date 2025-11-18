@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69EDF824-503D-45FE-9614-749A46B3BA17}|WinForms\\WinForms.csproj|d:\\\u043B\u0430\u0431\u044B\\kpo\\medapp\\winforms\\patientcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{69EDF824-503D-45FE-9614-749A46B3BA17}|WinForms\\WinForms.csproj|solutionrelative:winforms\\patientcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{69EDF824-503D-45FE-9614-749A46B3BA17}|WinForms\\WinForms.csproj|d:\\\u043B\u0430\u0431\u044B\\kpo\\medapp\\winforms\\patientcardstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{69EDF824-503D-45FE-9614-749A46B3BA17}|WinForms\\WinForms.csproj|solutionrelative:winforms\\patientcardstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69EDF824-503D-45FE-9614-749A46B3BA17}|WinForms\\WinForms.csproj|d:\\\u043B\u0430\u0431\u044B\\kpo\\medapp\\winforms\\patientcardstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69EDF824-503D-45FE-9614-749A46B3BA17}|WinForms\\WinForms.csproj|solutionrelative:winforms\\patientcardstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69EDF824-503D-45FE-9614-749A46B3BA17}|WinForms\\WinForms.csproj|d:\\\u043B\u0430\u0431\u044B\\kpo\\medapp\\winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{69EDF824-503D-45FE-9614-749A46B3BA17}|WinForms\\WinForms.csproj|solutionrelative:winforms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69EDF824-503D-45FE-9614-749A46B3BA17}|WinForms\\WinForms.csproj|d:\\\u043B\u0430\u0431\u044B\\kpo\\medapp\\winforms\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69EDF824-503D-45FE-9614-749A46B3BA17}|WinForms\\WinForms.csproj|solutionrelative:winforms\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +31,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PatientCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\WinForms\\PatientCard.cs",
-              "RelativeDocumentMoniker": "WinForms\\PatientCard.cs",
-              "ToolTip": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\WinForms\\PatientCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
-              "RelativeToolTip": "WinForms\\PatientCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "Title": "PatientCardsTable.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\WinForms\\PatientCardsTable.cs",
+              "RelativeDocumentMoniker": "WinForms\\PatientCardsTable.cs",
+              "ToolTip": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\WinForms\\PatientCardsTable.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "RelativeToolTip": "WinForms\\PatientCardsTable.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T13:07:04.871Z",
+              "WhenOpened": "2025-11-18T16:52:28.861Z",
               "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\WinForms\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "WinForms\\Login.Designer.cs",
+              "ToolTip": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\WinForms\\Login.Designer.cs",
+              "RelativeToolTip": "WinForms\\Login.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T16:48:49.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\WinForms\\Login.cs",
+              "RelativeDocumentMoniker": "WinForms\\Login.cs",
+              "ToolTip": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\WinForms\\Login.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "WinForms\\Login.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T16:48:00.099Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientCardsTable.cs",
+              "DocumentMoniker": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\WinForms\\PatientCardsTable.cs",
+              "RelativeDocumentMoniker": "WinForms\\PatientCardsTable.cs",
+              "ToolTip": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\WinForms\\PatientCardsTable.cs*",
+              "RelativeToolTip": "WinForms\\PatientCardsTable.cs*",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAwwBYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T16:45:21.764Z",
+              "EditorCaption": ""
             }
           ]
         }

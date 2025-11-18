@@ -31,7 +31,6 @@
             SplitContainer splitContainer_body;
             tableLayoutPanel_Patient_Info = new TableLayoutPanel();
             label_patient_phoneNumber = new Label();
-            textBox_patient_lastName = new TextBox();
             label_patient_patronymic = new Label();
             label_patient_gender = new Label();
             label_patient_birthday = new Label();
@@ -66,6 +65,7 @@
             button_editPatientInfo = new Button();
             button_patientCard_back = new Button();
             label_formName = new Label();
+            textBox_patient_lastName = new TextBox();
             splitContainer_body = new SplitContainer();
             ((System.ComponentModel.ISupportInitialize)splitContainer_body).BeginInit();
             splitContainer_body.Panel1.SuspendLayout();
@@ -113,8 +113,8 @@
             tableLayoutPanel_Patient_Info.ColumnCount = 2;
             tableLayoutPanel_Patient_Info.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 39.02439F));
             tableLayoutPanel_Patient_Info.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60.97561F));
-            tableLayoutPanel_Patient_Info.Controls.Add(label_patient_phoneNumber, 0, 5);
             tableLayoutPanel_Patient_Info.Controls.Add(textBox_patient_lastName, 1, 0);
+            tableLayoutPanel_Patient_Info.Controls.Add(label_patient_phoneNumber, 0, 5);
             tableLayoutPanel_Patient_Info.Controls.Add(label_patient_patronymic, 0, 2);
             tableLayoutPanel_Patient_Info.Controls.Add(label_patient_gender, 0, 3);
             tableLayoutPanel_Patient_Info.Controls.Add(label_patient_birthday, 0, 4);
@@ -151,16 +151,6 @@
             label_patient_phoneNumber.Size = new Size(63, 30);
             label_patient_phoneNumber.TabIndex = 3;
             label_patient_phoneNumber.Text = "Номер телефона:";
-            // 
-            // textBox_patient_lastName
-            // 
-            textBox_patient_lastName.Anchor = AnchorStyles.None;
-            textBox_patient_lastName.Font = new Font("Segoe UI", 11F);
-            textBox_patient_lastName.Location = new Point(99, 14);
-            textBox_patient_lastName.Name = "textBox_patient_lastName";
-            textBox_patient_lastName.ReadOnly = true;
-            textBox_patient_lastName.Size = new Size(100, 27);
-            textBox_patient_lastName.TabIndex = 1;
             // 
             // label_patient_patronymic
             // 
@@ -519,6 +509,15 @@
             label_formName.Text = "Медицинская карта пациента";
             label_formName.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // textBox_patient_lastName
+            // 
+            textBox_patient_lastName.Anchor = AnchorStyles.None;
+            textBox_patient_lastName.Location = new Point(99, 16);
+            textBox_patient_lastName.Name = "textBox_patient_lastName";
+            textBox_patient_lastName.ReadOnly = true;
+            textBox_patient_lastName.Size = new Size(100, 23);
+            textBox_patient_lastName.TabIndex = 13;
+            // 
             // PatientCard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -562,7 +561,6 @@
         private Label label_patient_phoneNumber;
         private Label label_patient_firstName;
         private Label label_patient_lastName;
-        private TextBox textBox_patient_lastName;
         private Label label_patient_patronymic;
         private Label label_patient_gender;
         private Label label_patient_birthday;
@@ -592,6 +590,6 @@
         private DataGridViewButtonColumn column_examinationResult_open;
         private Button button_addExaminationResult;
         private Label label_formName;
-
+        private TextBox textBox_patient_lastName;
     }
 }

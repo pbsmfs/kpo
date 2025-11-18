@@ -14,15 +14,22 @@ namespace WinForms
     public partial class PatientCard : Form
     {
         private bool isEditMode = false;
+        private PatientCardsTable _patientCardsTableForm;
+        private PatientData _patientData;
 
-        public PatientCard()
+        public PatientCard(PatientCardsTable patientCardsTableForm, PatientData patientData)
         {
             InitializeComponent();
+            _patientCardsTableForm = patientCardsTableForm;
+            _patientData = patientData;
+
+            LoadPatientData();
 
             button_patientCard_back.Click += (sender, e) =>
             {
-                PatientCardsTable patientCardsTable = new PatientCardsTable();
-                patientCardsTable.Show();
+                _patientCardsTableForm.StartPosition = FormStartPosition.Manual;
+                _patientCardsTableForm.Location = this.Location;
+                _patientCardsTableForm.Show();
                 this.Close();
             };
 
@@ -42,8 +49,6 @@ namespace WinForms
                     button_editPatientInfo.Image = Properties.Resources.pencil;
                     isEditMode = false;
 
-                    // update_PatientInfo();
-
                     MessageBox.Show("Изменения сохранены.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             };
@@ -51,14 +56,38 @@ namespace WinForms
             button_addMedicalRecord.Click += (sender, e) =>
             {
                 MedicalRecordCreation medicalRecordForm = new MedicalRecordCreation();
+                medicalRecordForm.StartPosition = FormStartPosition.Manual;
+                medicalRecordForm.Location = this.Location;
                 medicalRecordForm.ShowDialog();
             };
 
             button_addExaminationResult.Click += (sender, e) =>
             {
                 ExaminationResultCreation examinationForm = new ExaminationResultCreation();
+                examinationForm.StartPosition = FormStartPosition.Manual;
+                examinationForm.Location = this.Location;
                 examinationForm.ShowDialog();
             };
+        }
+
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            base.OnFormClosed(e);
+            if (!_patientCardsTableForm.Visible)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void LoadPatientData()
+        {
+            textBox_patient_lastName.Text = _patientData.LastName;
+            textBox_patient_firstName.Text = _patientData.FirstName;
+            textBox_patient_patronymic.Text = _patientData.Patronymic;
+            textBox_patient_gender.Text = _patientData.Gender;
+            textBox_patient_birthday.Text = _patientData.Birthday.ToString("dd.MM.yyyy");
+            textBox_patient_phoneNumber.Text = _patientData.PhoneNumber;
+            textBox_patient_adress.Text = _patientData.Address;
         }
 
         private void EnableEditing()

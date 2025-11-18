@@ -12,9 +12,24 @@ namespace WinForms
 {
     public partial class PatientCardCreation : Form
     {
+        private PatientCardsTable _patientCardsTableForm;
+
         public PatientCardCreation()
         {
             InitializeComponent();
+
+            button_patientCardCreation_back.Click += (sender, e) =>
+            {
+                this.Close();
+            };
+
+            button_patientCardCreation_save.Click += (sender, e) =>
+            {
+
+                MessageBox.Show("Карта пациента добавлена.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.Close();
+            };
         }
     }
 }
