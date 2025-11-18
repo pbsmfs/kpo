@@ -15,6 +15,20 @@ namespace WinForms
         public ExaminationResultCreation()
         {
             InitializeComponent();
+
+            button_examinationResultCreation_back.Click += (sender, e) =>
+            {
+                this.Close();
+            };
+
+            button_examinationResultCreation_save.Click += (sender, e) =>
+            {
+                // update_ExaminationResultsData();
+
+                MessageBox.Show("Результаты анализов добавлены.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.Close();
+            };
         }
     }
 }

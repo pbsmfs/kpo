@@ -86,7 +86,7 @@
             // 
             splitContainer_examinationResult_body.Panel2.Controls.Add(dataGridView_examinationResult);
             splitContainer_examinationResult_body.Size = new Size(453, 455);
-            splitContainer_examinationResult_body.SplitterDistance = 94;
+            splitContainer_examinationResult_body.SplitterDistance = 83;
             splitContainer_examinationResult_body.TabIndex = 15;
             // 
             // tableLayoutPanel_examinationResult
@@ -103,7 +103,7 @@
             tableLayoutPanel_examinationResult.Name = "tableLayoutPanel_examinationResult";
             tableLayoutPanel_examinationResult.RowCount = 1;
             tableLayoutPanel_examinationResult.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
-            tableLayoutPanel_examinationResult.Size = new Size(453, 94);
+            tableLayoutPanel_examinationResult.Size = new Size(453, 83);
             tableLayoutPanel_examinationResult.TabIndex = 16;
             // 
             // label_examinationResult_type
@@ -111,7 +111,7 @@
             label_examinationResult_type.Anchor = AnchorStyles.None;
             label_examinationResult_type.AutoSize = true;
             label_examinationResult_type.Font = new Font("Segoe UI", 9F);
-            label_examinationResult_type.Location = new Point(10, 39);
+            label_examinationResult_type.Location = new Point(10, 34);
             label_examinationResult_type.Name = "label_examinationResult_type";
             label_examinationResult_type.Size = new Size(78, 15);
             label_examinationResult_type.TabIndex = 0;
@@ -125,7 +125,7 @@
             textBox_examinationResult_type.Margin = new Padding(10);
             textBox_examinationResult_type.Multiline = true;
             textBox_examinationResult_type.Name = "textBox_examinationResult_type";
-            textBox_examinationResult_type.Size = new Size(335, 74);
+            textBox_examinationResult_type.Size = new Size(335, 63);
             textBox_examinationResult_type.TabIndex = 1;
             // 
             // dataGridView_examinationResult
@@ -139,7 +139,7 @@
             dataGridView_examinationResult.Location = new Point(0, 0);
             dataGridView_examinationResult.Name = "dataGridView_examinationResult";
             dataGridView_examinationResult.ReadOnly = true;
-            dataGridView_examinationResult.Size = new Size(453, 357);
+            dataGridView_examinationResult.Size = new Size(453, 368);
             dataGridView_examinationResult.TabIndex = 0;
             // 
             // column_examinationResult_parametr

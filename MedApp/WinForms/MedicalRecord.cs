@@ -15,6 +15,11 @@ namespace WinForms
         public MedicalRecord()
         {
             InitializeComponent();
+
+            button_medicalRecord_back.Click += (sender, e) =>
+            {
+                this.Close();
+            };
         }
     }
 }

@@ -15,6 +15,11 @@ namespace WinForms
         public ExaminationResult()
         {
             InitializeComponent();
+
+            button_examinationResult_back.Click += (sender, e) =>
+            {
+                this.Close();
+            };
         }
     }
 }

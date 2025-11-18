@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{69EDF824-503D-45FE-9614-749A46B3BA17}|WinForms\\WinForms.csproj|d:\\\u043B\u0430\u0431\u044B\\kpo\\medapp\\winforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69EDF824-503D-45FE-9614-749A46B3BA17}|WinForms\\WinForms.csproj|solutionrelative:winforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\WinForms\\Program.cs",
+              "RelativeDocumentMoniker": "WinForms\\Program.cs",
+              "ToolTip": "D:\\\u041B\u0430\u0431\u044B\\kpo\\MedApp\\WinForms\\Program.cs",
+              "RelativeToolTip": "WinForms\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T13:10:00.047Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
