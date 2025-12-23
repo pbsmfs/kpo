@@ -92,8 +92,8 @@
             tableLayoutPanel_medicalRecords_body.AutoSize = true;
             tableLayoutPanel_medicalRecords_body.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             tableLayoutPanel_medicalRecords_body.ColumnCount = 2;
-            tableLayoutPanel_medicalRecords_body.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 21.6335545F));
-            tableLayoutPanel_medicalRecords_body.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 78.36645F));
+            tableLayoutPanel_medicalRecords_body.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 22.395834F));
+            tableLayoutPanel_medicalRecords_body.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 77.6041641F));
             tableLayoutPanel_medicalRecords_body.Controls.Add(textBox_medicalRecord_treatment, 1, 2);
             tableLayoutPanel_medicalRecords_body.Controls.Add(textBox_medicalRecord_symtpoms, 1, 1);
             tableLayoutPanel_medicalRecords_body.Controls.Add(label_medialRecord_symtpoms, 0, 1);
@@ -114,22 +114,22 @@
             // 
             textBox_medicalRecord_treatment.Anchor = AnchorStyles.None;
             textBox_medicalRecord_treatment.Font = new Font("Segoe UI", 11F);
-            textBox_medicalRecord_treatment.Location = new Point(93, 314);
+            textBox_medicalRecord_treatment.Location = new Point(96, 314);
             textBox_medicalRecord_treatment.Margin = new Padding(10);
             textBox_medicalRecord_treatment.Multiline = true;
             textBox_medicalRecord_treatment.Name = "textBox_medicalRecord_treatment";
-            textBox_medicalRecord_treatment.Size = new Size(281, 132);
+            textBox_medicalRecord_treatment.Size = new Size(278, 132);
             textBox_medicalRecord_treatment.TabIndex = 5;
             // 
             // textBox_medicalRecord_symtpoms
             // 
             textBox_medicalRecord_symtpoms.Anchor = AnchorStyles.None;
             textBox_medicalRecord_symtpoms.Font = new Font("Segoe UI", 11F);
-            textBox_medicalRecord_symtpoms.Location = new Point(93, 162);
+            textBox_medicalRecord_symtpoms.Location = new Point(96, 162);
             textBox_medicalRecord_symtpoms.Margin = new Padding(10);
             textBox_medicalRecord_symtpoms.Multiline = true;
             textBox_medicalRecord_symtpoms.Name = "textBox_medicalRecord_symtpoms";
-            textBox_medicalRecord_symtpoms.Size = new Size(281, 131);
+            textBox_medicalRecord_symtpoms.Size = new Size(278, 131);
             textBox_medicalRecord_symtpoms.TabIndex = 4;
             // 
             // label_medialRecord_symtpoms
@@ -137,7 +137,7 @@
             label_medialRecord_symtpoms.Anchor = AnchorStyles.None;
             label_medialRecord_symtpoms.AutoSize = true;
             label_medialRecord_symtpoms.Font = new Font("Segoe UI", 9F);
-            label_medialRecord_symtpoms.Location = new Point(6, 220);
+            label_medialRecord_symtpoms.Location = new Point(7, 220);
             label_medialRecord_symtpoms.Name = "label_medialRecord_symtpoms";
             label_medialRecord_symtpoms.Size = new Size(71, 15);
             label_medialRecord_symtpoms.TabIndex = 2;
@@ -148,7 +148,7 @@
             label_medialRecord_disagnosis.Anchor = AnchorStyles.None;
             label_medialRecord_disagnosis.AutoSize = true;
             label_medialRecord_disagnosis.Font = new Font("Segoe UI", 9F);
-            label_medialRecord_disagnosis.Location = new Point(14, 68);
+            label_medialRecord_disagnosis.Location = new Point(15, 68);
             label_medialRecord_disagnosis.Name = "label_medialRecord_disagnosis";
             label_medialRecord_disagnosis.Size = new Size(55, 15);
             label_medialRecord_disagnosis.TabIndex = 0;
@@ -158,11 +158,11 @@
             // 
             textBox_medicalRecord_diagnosis.Anchor = AnchorStyles.None;
             textBox_medicalRecord_diagnosis.Font = new Font("Segoe UI", 11F);
-            textBox_medicalRecord_diagnosis.Location = new Point(93, 10);
+            textBox_medicalRecord_diagnosis.Location = new Point(96, 10);
             textBox_medicalRecord_diagnosis.Margin = new Padding(10);
             textBox_medicalRecord_diagnosis.Multiline = true;
             textBox_medicalRecord_diagnosis.Name = "textBox_medicalRecord_diagnosis";
-            textBox_medicalRecord_diagnosis.Size = new Size(281, 131);
+            textBox_medicalRecord_diagnosis.Size = new Size(278, 131);
             textBox_medicalRecord_diagnosis.TabIndex = 1;
             // 
             // label_medicalRecord_treatment
@@ -170,9 +170,9 @@
             label_medicalRecord_treatment.Anchor = AnchorStyles.None;
             label_medicalRecord_treatment.AutoSize = true;
             label_medicalRecord_treatment.Font = new Font("Segoe UI", 9F);
-            label_medicalRecord_treatment.Location = new Point(4, 365);
+            label_medicalRecord_treatment.Location = new Point(3, 365);
             label_medicalRecord_treatment.Name = "label_medicalRecord_treatment";
-            label_medicalRecord_treatment.Size = new Size(74, 30);
+            label_medicalRecord_treatment.Size = new Size(80, 30);
             label_medicalRecord_treatment.TabIndex = 3;
             label_medicalRecord_treatment.Text = "Назначенное лечение:";
             // 

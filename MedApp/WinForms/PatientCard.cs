@@ -81,13 +81,13 @@ namespace WinForms
 
         private void LoadPatientData()
         {
-            textBox_patient_lastName.Text = _patientData.LastName;
-            textBox_patient_firstName.Text = _patientData.FirstName;
-            textBox_patient_patronymic.Text = _patientData.Patronymic;
-            textBox_patient_gender.Text = _patientData.Gender;
-            textBox_patient_birthday.Text = _patientData.Birthday.ToString("dd.MM.yyyy");
-            textBox_patient_phoneNumber.Text = _patientData.PhoneNumber;
-            textBox_patient_adress.Text = _patientData.Address;
+            //textBox_patient_lastName.Text = _patientData.LastName;
+            //textBox_patient_firstName.Text = _patientData.FirstName;
+            //textBox_patient_patronymic.Text = _patientData.Patronymic;
+            //textBox_patient_gender.Text = _patientData.Gender;
+            //textBox_patient_birthday.Text = _patientData.Birthday.ToString("dd.MM.yyyy");
+            //textBox_patient_phoneNumber.Text = _patientData.PhoneNumber;
+            //textBox_patient_adress.Text = _patientData.Address;
         }
 
         private void EnableEditing()
@@ -95,8 +95,10 @@ namespace WinForms
             textBox_patient_lastName.ReadOnly = false;
             textBox_patient_firstName.ReadOnly = false;
             textBox_patient_patronymic.ReadOnly = false;
-            textBox_patient_gender.ReadOnly = false;
-            textBox_patient_birthday.ReadOnly = false;
+            //textBox_patient_gender.ReadOnly = false;
+            //textBox_patient_birthday.ReadOnly = false;
+            comboBox_patient_gender.Enabled = true;
+            dateTimePicker_patient_birthday.Enabled = true;
             textBox_patient_phoneNumber.ReadOnly = false;
             textBox_patient_adress.ReadOnly = false;
         }
@@ -106,8 +108,10 @@ namespace WinForms
             textBox_patient_lastName.ReadOnly = true;
             textBox_patient_firstName.ReadOnly = true;
             textBox_patient_patronymic.ReadOnly = true;
-            textBox_patient_gender.ReadOnly = true;
-            textBox_patient_birthday.ReadOnly = true;
+            //textBox_patient_gender.ReadOnly = true;
+            //textBox_patient_birthday.ReadOnly = true;
+            comboBox_patient_gender.Enabled = false;
+            dateTimePicker_patient_birthday.Enabled = false;
             textBox_patient_phoneNumber.ReadOnly = true;
             textBox_patient_adress.ReadOnly = true;
         }

@@ -24,8 +24,6 @@ namespace WinForms
 
             button_medicalRecordCration_save.Click += (sender, e) =>
             {
-                // update_MedicalRecordsData();
-
                 MessageBox.Show("Запись приема добавлена.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.Close();

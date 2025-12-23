@@ -108,7 +108,6 @@ namespace WinForms
         }
     }
 
-    // Класс для хранения данных пациента
     public class PatientData
     {
         public int Id { get; set; }

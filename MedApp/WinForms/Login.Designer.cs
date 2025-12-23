@@ -38,7 +38,7 @@
             // label_login
             // 
             label_login.AutoSize = true;
-            label_login.Location = new Point(150, 120);
+            label_login.Location = new Point(40, 50);
             label_login.Name = "label_login";
             label_login.Size = new Size(44, 15);
             label_login.TabIndex = 0;
@@ -47,7 +47,7 @@
             // label_password
             // 
             label_password.AutoSize = true;
-            label_password.Location = new Point(150, 170);
+            label_password.Location = new Point(40, 100);
             label_password.Name = "label_password";
             label_password.Size = new Size(52, 15);
             label_password.TabIndex = 1;
@@ -55,14 +55,14 @@
             // 
             // textBox_login
             // 
-            textBox_login.Location = new Point(220, 117);
+            textBox_login.Location = new Point(110, 47);
             textBox_login.Name = "textBox_login";
             textBox_login.Size = new Size(230, 23);
             textBox_login.TabIndex = 2;
             // 
             // textBox_password
             // 
-            textBox_password.Location = new Point(220, 167);
+            textBox_password.Location = new Point(110, 97);
             textBox_password.Name = "textBox_password";
             textBox_password.Size = new Size(230, 23);
             textBox_password.TabIndex = 3;
@@ -70,7 +70,7 @@
             // 
             // button_login
             // 
-            button_login.Location = new Point(220, 230);
+            button_login.Location = new Point(110, 160);
             button_login.Name = "button_login";
             button_login.Size = new Size(160, 30);
             button_login.TabIndex = 4;
@@ -81,7 +81,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(600, 400);
+            ClientSize = new Size(391, 230);
             Controls.Add(button_login);
             Controls.Add(textBox_password);
             Controls.Add(textBox_login);

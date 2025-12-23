@@ -31,12 +31,12 @@
             label_patient_adress = new Label();
             textBox_patient_firstName = new TextBox();
             textBox_patient_patronymic = new TextBox();
-            textBox_patient_gender = new TextBox();
-            textBox_patient_birthday = new TextBox();
             textBox_patient_phoneNumber = new TextBox();
             textBox_patient_adress = new TextBox();
             label_patient_firstName = new Label();
             label_patient_lastName = new Label();
+            dateTimePicker_patient_birthday = new DateTimePicker();
+            comboBox_patient_gender = new ComboBox();
             panel_patientCardCreation_buttons.SuspendLayout();
             panel_patientCardCreation_header.SuspendLayout();
             tableLayoutPanel_patientCardCreation_body.SuspendLayout();
@@ -107,12 +107,12 @@
             tableLayoutPanel_patientCardCreation_body.Controls.Add(label_patient_adress, 0, 6);
             tableLayoutPanel_patientCardCreation_body.Controls.Add(textBox_patient_firstName, 1, 1);
             tableLayoutPanel_patientCardCreation_body.Controls.Add(textBox_patient_patronymic, 1, 2);
-            tableLayoutPanel_patientCardCreation_body.Controls.Add(textBox_patient_gender, 1, 3);
-            tableLayoutPanel_patientCardCreation_body.Controls.Add(textBox_patient_birthday, 1, 4);
             tableLayoutPanel_patientCardCreation_body.Controls.Add(textBox_patient_phoneNumber, 1, 5);
             tableLayoutPanel_patientCardCreation_body.Controls.Add(textBox_patient_adress, 1, 6);
             tableLayoutPanel_patientCardCreation_body.Controls.Add(label_patient_firstName, 0, 1);
             tableLayoutPanel_patientCardCreation_body.Controls.Add(label_patient_lastName, 0, 0);
+            tableLayoutPanel_patientCardCreation_body.Controls.Add(dateTimePicker_patient_birthday, 1, 4);
+            tableLayoutPanel_patientCardCreation_body.Controls.Add(comboBox_patient_gender, 1, 3);
             tableLayoutPanel_patientCardCreation_body.Dock = DockStyle.Fill;
             tableLayoutPanel_patientCardCreation_body.Location = new Point(0, 55);
             tableLayoutPanel_patientCardCreation_body.Name = "tableLayoutPanel_patientCardCreation_body";
@@ -210,24 +210,6 @@
             textBox_patient_patronymic.Size = new Size(208, 23);
             textBox_patient_patronymic.TabIndex = 8;
             // 
-            // textBox_patient_gender
-            // 
-            textBox_patient_gender.Anchor = AnchorStyles.None;
-            textBox_patient_gender.Location = new Point(152, 216);
-            textBox_patient_gender.Margin = new Padding(15);
-            textBox_patient_gender.Name = "textBox_patient_gender";
-            textBox_patient_gender.Size = new Size(208, 23);
-            textBox_patient_gender.TabIndex = 9;
-            // 
-            // textBox_patient_birthday
-            // 
-            textBox_patient_birthday.Anchor = AnchorStyles.None;
-            textBox_patient_birthday.Location = new Point(152, 281);
-            textBox_patient_birthday.Margin = new Padding(15);
-            textBox_patient_birthday.Name = "textBox_patient_birthday";
-            textBox_patient_birthday.Size = new Size(208, 23);
-            textBox_patient_birthday.TabIndex = 10;
-            // 
             // textBox_patient_phoneNumber
             // 
             textBox_patient_phoneNumber.Anchor = AnchorStyles.None;
@@ -268,6 +250,25 @@
             label_patient_lastName.TabIndex = 0;
             label_patient_lastName.Text = "Фамилия:";
             // 
+            // dateTimePicker_patient_birthday
+            // 
+            dateTimePicker_patient_birthday.Anchor = AnchorStyles.None;
+            dateTimePicker_patient_birthday.Location = new Point(152, 281);
+            dateTimePicker_patient_birthday.Name = "dateTimePicker_patient_birthday";
+            dateTimePicker_patient_birthday.Size = new Size(208, 23);
+            dateTimePicker_patient_birthday.TabIndex = 13;
+            // 
+            // comboBox_patient_gender
+            // 
+            comboBox_patient_gender.Anchor = AnchorStyles.None;
+            comboBox_patient_gender.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox_patient_gender.FormattingEnabled = true;
+            comboBox_patient_gender.Items.AddRange(new object[] { "Мужской", "Женский" });
+            comboBox_patient_gender.Location = new Point(152, 216);
+            comboBox_patient_gender.Name = "comboBox_patient_gender";
+            comboBox_patient_gender.Size = new Size(208, 23);
+            comboBox_patient_gender.TabIndex = 14;
+            // 
             // PatientCardCreation
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -302,11 +303,11 @@
         private Label label_patient_adress;
         private TextBox textBox_patient_firstName;
         private TextBox textBox_patient_patronymic;
-        private TextBox textBox_patient_gender;
-        private TextBox textBox_patient_birthday;
         private TextBox textBox_patient_phoneNumber;
         private TextBox textBox_patient_adress;
         private Label label_patient_firstName;
         private Label label_patient_lastName;
+        private DateTimePicker dateTimePicker_patient_birthday;
+        private ComboBox comboBox_patient_gender;
     }
 }

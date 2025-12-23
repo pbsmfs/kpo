@@ -25,11 +25,15 @@ namespace WinForms
 
             button_patientCardCreation_save.Click += (sender, e) =>
             {
-
                 MessageBox.Show("Карта пациента добавлена.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.Close();
             };
+        }
+
+        private void tableLayoutPanel_patientCardCreation_body_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

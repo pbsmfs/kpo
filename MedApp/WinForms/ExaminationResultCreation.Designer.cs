@@ -107,7 +107,7 @@
             // 
             splitContainer_examinationResultCreation_body.Panel2.Controls.Add(dataGridView_examinationResultCreation);
             splitContainer_examinationResultCreation_body.Size = new Size(384, 456);
-            splitContainer_examinationResultCreation_body.SplitterDistance = 51;
+            splitContainer_examinationResultCreation_body.SplitterDistance = 83;
             splitContainer_examinationResultCreation_body.TabIndex = 17;
             // 
             // tableLayoutPanel_examinationResultCreation
@@ -124,7 +124,7 @@
             tableLayoutPanel_examinationResultCreation.Name = "tableLayoutPanel_examinationResultCreation";
             tableLayoutPanel_examinationResultCreation.RowCount = 1;
             tableLayoutPanel_examinationResultCreation.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
-            tableLayoutPanel_examinationResultCreation.Size = new Size(384, 51);
+            tableLayoutPanel_examinationResultCreation.Size = new Size(384, 83);
             tableLayoutPanel_examinationResultCreation.TabIndex = 16;
             // 
             // label_examinationResult_type
@@ -132,7 +132,7 @@
             label_examinationResult_type.Anchor = AnchorStyles.None;
             label_examinationResult_type.AutoSize = true;
             label_examinationResult_type.Font = new Font("Segoe UI", 9F);
-            label_examinationResult_type.Location = new Point(14, 10);
+            label_examinationResult_type.Location = new Point(14, 26);
             label_examinationResult_type.Name = "label_examinationResult_type";
             label_examinationResult_type.Size = new Size(54, 30);
             label_examinationResult_type.TabIndex = 0;
@@ -142,10 +142,11 @@
             // 
             textBox_examinationResult_type.Anchor = AnchorStyles.None;
             textBox_examinationResult_type.Font = new Font("Segoe UI", 11F);
-            textBox_examinationResult_type.Location = new Point(93, 12);
+            textBox_examinationResult_type.Location = new Point(93, 10);
             textBox_examinationResult_type.Margin = new Padding(10);
+            textBox_examinationResult_type.Multiline = true;
             textBox_examinationResult_type.Name = "textBox_examinationResult_type";
-            textBox_examinationResult_type.Size = new Size(281, 27);
+            textBox_examinationResult_type.Size = new Size(281, 63);
             textBox_examinationResult_type.TabIndex = 1;
             // 
             // dataGridView_examinationResultCreation
@@ -156,7 +157,7 @@
             dataGridView_examinationResultCreation.Dock = DockStyle.Fill;
             dataGridView_examinationResultCreation.Location = new Point(0, 0);
             dataGridView_examinationResultCreation.Name = "dataGridView_examinationResultCreation";
-            dataGridView_examinationResultCreation.Size = new Size(384, 401);
+            dataGridView_examinationResultCreation.Size = new Size(384, 369);
             dataGridView_examinationResultCreation.TabIndex = 0;
             // 
             // column_examinationResult_parametr

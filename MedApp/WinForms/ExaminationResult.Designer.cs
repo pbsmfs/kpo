@@ -74,6 +74,7 @@
             // splitContainer_examinationResult_body
             // 
             splitContainer_examinationResult_body.Dock = DockStyle.Fill;
+            splitContainer_examinationResult_body.IsSplitterFixed = true;
             splitContainer_examinationResult_body.Location = new Point(0, 55);
             splitContainer_examinationResult_body.Name = "splitContainer_examinationResult_body";
             splitContainer_examinationResult_body.Orientation = Orientation.Horizontal;
